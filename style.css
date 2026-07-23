@@ -1,0 +1,642 @@
+/* ===================================
+   MEDUCO PREMIUM BLACK + GOLD THEME
+   Luxury Medical Academy Style
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- GLOBAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #2b2105, #050505 45%);
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* --- TYPOGRAPHY & GOLD EFFECTS --- */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+.gold-text {
+    background: linear-gradient(90deg, #fff2a6, #d4af37, #ffdf70, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.luxury-text {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #fff2a6, #d4af37, #ffcc33, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(212,175,55,0.4);
+}
+
+.luxury-word {
+    color: #ffd700;
+    text-shadow: 0 0 20px rgba(255,215,0,0.7);
+}
+
+.diamond {
+    color: #d4af37;
+    font-size: 0.6em;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+/* --- NAVBAR --- */
+header {
+    background: rgba(0,0,0,0.85);
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+    backdrop-filter: blur(15px);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Image Styling */
+header img {
+    height: 65px;
+    width: auto;
+    transition: 0.4s ease;
+    filter: drop-shadow(0 0 12px rgba(212,175,55,0.5));
+}
+
+header img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 25px rgba(255,215,0,0.9));
+}
+
+/* Nav Links */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    position: relative;
+    padding: 10px 18px;
+    margin-left: 10px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+/* Gold glow hover */
+nav a:hover, nav a.active {
+    color: #ffd700;
+    background: linear-gradient(145deg, rgba(212,175,55,0.15), rgba(0,0,0,0.8));
+    border: 1px solid rgba(212,175,55,0.6);
+    box-shadow: 0 0 20px rgba(212,175,55,0.5);
+    transform: translateY(-5px);
+}
+
+/* Gold underline animation */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: 0.4s;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 70%;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 8%;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 0 25px rgba(212,175,55,0.35);
+    animation: luxuryGlow 4s infinite;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cccccc;
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+/* --- BUTTONS --- */
+.start-btn {
+    background: linear-gradient(135deg, #b8860b, #ffd700, #fff2a6);
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: 0 0 25px rgba(212,175,55,0.6);
+    transition: 0.4s ease;
+}
+
+.start-btn:hover {
+    transform: translateY(-7px) scale(1.05);
+    box-shadow: 0 0 50px rgba(255,215,0,1);
+}
+
+.explore-btn {
+    background: rgba(0,0,0,0.6);
+    color: #ffd700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 16px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px;
+    border: 1px solid #d4af37;
+    backdrop-filter: blur(10px);
+    transition: 0.4s ease;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(135deg, #d4af37, #ffd700);
+    color: #000;
+    transform: translateY(-7px);
+    box-shadow: 0 0 45px rgba(212,175,55,0.8);
+}
+
+/* --- CARDS & FEATURES --- */
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.features h2 span {
+    color: #ffd700;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card, .medical-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(0,0,0,0.8));
+    border: 1px solid rgba(212,175,55,0.4);
+    border-radius: 25px;
+    padding: 30px;
+    backdrop-filter: blur(15px);
+    transition: 0.4s ease;
+    max-width: 350px;
+    text-align: center;
+}
+
+.card:hover, .medical-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffd700;
+    box-shadow: 0 0 35px rgba(212,175,55,0.4);
+}
+
+.icon {
+    font-size: 45px;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.gold-line {
+    width: 60%;
+    height: 2px;
+    background: #d4af37;
+    margin: 20px auto;
+}
+
+/* --- FOOTER --- */
+footer {
+    background: #000;
+    border-top: 1px solid rgba(212,175,55,0.3);
+    padding: 40px;
+    text-align: center;
+    color: #aaa;
+}
+
+footer h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+/* --- LOGIN PAGE --- */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #050505;
+}
+
+.login-box {
+    width: 380px;
+    padding: 45px;
+    background: rgba(20,20,20,0.9);
+    border: 1px solid #d4af37;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(212,175,55,0.25);
+}
+
+.login-box h1 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background: #111;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-box input:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(212,175,55,0.3);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #d4af37, #fff1a8);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212,175,55,0.5);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes luxuryGlow {
+    0% { text-shadow: 0 0 15px rgba(212,175,55,0.3); }
+    50% { text-shadow: 0 0 45px rgba(255,215,0,0.8); }
+    100% { text-shadow: 0 0 15px rgba(212,175,55,0.3); }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #d4af37; }
+    50% { box-shadow: 0 0 35px #ffd700; }
+    100% { box-shadow: 0 0 10px #d4af37; }
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    nav a {
+        margin: 5px;
+    }
+}/* Logo Image Styling */
+header img {
+    height: 65px;
+    width: auto;
+    transition: 0.4s ease;
+    filter: drop-shadow(0 0 12px rgba(212,175,55,0.5));
+}
+
+header img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 25px rgba(255,215,0,0.9));
+}/* --- PREMIUM TEXT LOGO --- */
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds perfect spacing before the stethoscope */
+    
+    /* The Moving Gold Gradient */
+    background: linear-gradient(
+        90deg,
+        #fff8d6 0%,
+        #ffd700 25%,
+        #b8860b 50%,
+        #ffd700 75%,
+        #fff8d6 100%
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldShine 5s linear infinite;
+    transition: 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgba(255,215,0,0.8));
+}
+
+@keyframes goldShine {
+    from { background-position: 0% center; }
+    to { background-position: 300% center; }
+}/* --- ANATOMY DROPDOWN MENU --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background: rgba(15, 15, 15, 0.95);
+    min-width: 320px; /* Wide enough for long medical topics */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    z-index: 1000;
+    top: 100%;
+    left: 10px;
+    padding: 10px 0;
+    backdrop-filter: blur(15px);
+    
+    /* Smooth fade-in animation */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+//* =================================
+   ANATOMY DROPDOWN MENU
+================================= */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hides the menu until you hover */
+    position: absolute;
+    background: rgba(15, 15, 15, 0.95);
+    min-width: 260px; /* Perfect width for your medical topics */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    z-index: 1000;
+    top: 100%;
+    left: 10px;
+    padding: 10px 0;
+    backdrop-filter: blur(15px); /* The premium glass effect */
+    
+    /* Smooth fade-in animation */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* This makes the menu appear when your mouse touches "Anatomy" */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling for the individual topics inside the menu */
+.dropdown-content a {
+    color: #cccccc;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    margin: 0; /* Overrides the main nav spacing */
+    border-radius: 0; 
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* Removes the gold underline animation from the dropdown items */
+.dropdown-content a::after {
+    display: none;
+}
+
+/* Gold glow and slide effect when you hover over a specific topic */
+.dropdown-content a:hover {
+    background: linear-gradient(90deg, rgba(212,175,55,0.1), transparent);
+    color: #ffd700;
+    transform: translateX(5px);
+    box-shadow: none;
+    border: none;
+}/* =================================
+   PREMIUM DROPDOWN MENUS 
+   (Controls both Anatomy & Courses)
+================================= */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Hides the menu until hovered */
+    position: absolute;
+    background: rgba(15, 15, 15, 0.95);
+    min-width: 260px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    z-index: 1000;
+    top: 100%;
+    left: 10px;
+    padding: 10px 0;
+    backdrop-filter: blur(15px);
+    
+    /* Smooth fade-in animation */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Individual topic styling */
+.dropdown-content a {
+    color: #cccccc;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    border-radius: 0; 
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s ease;
+}
+
+/* Remove main nav gold underline */
+.dropdown-content a::after {
+    display: none;
+}
+
+/* Gold glow and slide effect on hover */
+.dropdown-content a:hover {
+    background: linear-gradient(90deg, rgba(212,175,55,0.1), transparent);
+    color: #ffd700;
+    transform: translateX(5px);
+    box-shadow: none;
+    border: none;
+}/* =================================
+   PREMIUM DROPDOWN MENUS 
+   (Upgraded with Custom Scrollbar for long lists)
+================================= */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background: rgba(15, 15, 15, 0.95);
+    min-width: 320px; /* Made slightly wider for long medical names */
+    max-height: 400px; /* Limits height so it doesn't go off screen */
+    overflow-y: auto; /* Adds scrolling if the list is too long */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    z-index: 1000;
+    top: 100%;
+    left: 10px;
+    padding: 10px 0;
+    backdrop-filter: blur(15px);
+    
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Custom Scrollbar for the Dropdown (Black & Gold) */
+.dropdown-content::-webkit-scrollbar {
+    width: 6px;
+}
+.dropdown-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+    background: #d4af37; /* Gold scrollbar */
+    border-radius: 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: #ffd700; 
+}
+
+/* Show menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Individual topic styling */
+.dropdown-content a {
+    color: #cccccc;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    border-radius: 0; 
+    font-size: 14px; /* Slightly smaller to fit long names */
+    font-weight: 500;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a::after {
+    display: none;
+}
+
+/* Gold glow and slide effect on hover */
+.dropdown-content a:hover {
+    background: linear-gradient(90deg, rgba(212,175,55,0.1), transparent);
+    color: #ffd700;
+    transform: translateX(5px);
+    box-shadow: none;
+    border: none;
+}

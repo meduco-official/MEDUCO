@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDUCO | Upper Limb Anatomy Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid #d4af37;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            color: #d4af37;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .back-btn {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-btn:hover { color: #d4af37; }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        .topic-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .topic-link {
+            background: #111;
+            border: 1px solid #222;
+            border-left: 4px solid #d4af37;
+            padding: 20px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s ease;
+        }
+        .topic-link:hover {
+            background: #181818;
+            border-color: #ffd700;
+            transform: translateX(5px);
+            color: #ffd700;
+        }
+        .arrow {
+            color: #d4af37;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">MEDUCO</a>
+        <a href="index.html" class="back-btn">← Back to Dashboard</a>
+    </header>
+
+    <div class="container">
+        <h1>Upper Limb Anatomy</h1>
+        <p class="subtitle">Select a topic below to view detailed notes:</p>
+
+        <div class="topic-grid">
+            <a href="ul-introduction.html" class="topic-link">
+                <span>1. Introduction</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-bones.html" class="topic-link">
+                <span>2. Bones</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-joints.html" class="topic-link">
+                <span>3. Joints</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-muscles.html" class="topic-link">
+                <span>4. Muscles</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-nerves.html" class="topic-link">
+                <span>5. Nerves</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-blood-supply.html" class="topic-link">
+                <span>6. Blood Supply</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-lymphatics.html" class="topic-link">
+                <span>7. Lymphatics</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="ul-clinical.html" class="topic-link">
+                <span>8. Clinical / Applied Anatomy</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
