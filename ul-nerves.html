@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDUCO | Neurovasculature of Upper Limb</title>
+  //fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #050505;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      background: rgba(10, 10, 10, 0.96);
+      border-bottom: 2px solid #d4af37;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover,
+    .topic-link:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-top: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 35px;
+    }
+
+    .section {
+      background: #111;
+      border: 1px solid #222;
+      border-left: 4px solid #d4af37;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .label {
+      color: #d4af37;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .topic-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #e0e0e0;
+      text-decoration: none;
+      background: #101010;
+      font-size: 14px;
+    }
+
+    a:focus {
+      outline: 2px solid #ffd700;
+      outline-offset: 3px;
+    }
+
+    .note {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow-x: auto;
+    }
+
+    th, td {
+      border: 1px solid #222;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #151515;
+      color: #d4af37;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 28px 16px 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">MEDUCO</a>
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+    <h1>Neurovasculature of the Upper Limb</h1>
+    <p class="subtitle">Arteries, veins, and nerves of the shoulder, arm, forearm, and hand.</p>
+
+    <div class="top-links">
+      <a class="topic-link" href="#overview">Overview</a>
+      <a class="topic-link" href="#arteries">Arteries</a>
+      <a class="topic-link" href="#veins">Veins</a>
+      <a class="topic-link" href="#nerves">Nerves</a>
+      <a class="topic-link" href="#revision">Quick Revision</a>
+    </div>
+
+    <section class="section" id="overview">
+      <h2>Chapter Overview</h2>
+      <p>
+        The upper limb is divided into regions such as the shoulder, arm, forearm, and hand. Each region has its own arterial, venous, and neural supply.
+      </p>
+      <p>
+        Understanding this neurovascular pattern is essential before studying injuries, compression syndromes, and clinical anatomy.
+      </p>
+    </section>
+
+    <section class="section" id="arteries">
+      <h2>Upper Limb Arteries</h2>
+
+      <div class="card">
+        <p>
+          The main arterial supply of the upper limb begins as the subclavian artery, which continues as the axillary artery, then the brachial artery, and finally divides into the radial and ulnar arteries.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Shoulder</h3>
+          <p><span class="label">Main artery:</span> Axillary artery</p>
+          <p><span class="label">Branches:</span></p>
+          <u
+          <ul>
+            >Superior thoracic artery</l/li>
+            >Thoracoacromial artery</l/li>
+            >Lateral thoracic artery</l/li>
+            >Anterior circumflex humeral artery</l/li>
+            >Posterior circumflex humeral artery</l/li>
+            >Subscapular artery</li>
+          </ul>
+          <p class="note">Mnemonic: Save The Lions And Protect Species.</p>
+        </div>
+
+        <div class="card">
+          <h3>Arm</h3>
+          <p><span class="label">Main artery:</span> Brachial artery</p>
+          <p><span class="label">Branches:</span></p>
+          <u
+          <ul>
+            >Profunda brachii artery</l/li>
+            >Nutrient artery to humerus</l/li>
+            >Superior ulnar collateral artery</l/li>
+            >Inferior ulnar collateral artery</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Forearm</h3>
+          <p><span class="label">Main arteries:</span> Radial artery and ulnar artery</p>
+          <p><span class="label">Radial branches:</span></p>
+          <u
+          <ul>
+            >Radial recurrent artery</l/li>
+            >Palmar carpal branch</l/li>
+            >Superficial carpal branch</li>
+          </ul>
+          <p><span class="label">Ulnar branches:</span></p>
+          <u
+          <ul>
+            >Anterior ulnar recurrent artery</l/li>
+            >Posterior ulnar recurrent artery</l/li>
+            >Muscular arteries</l/li>
+            >Common interosseous artery</l/li>
+            >Dorsal carpal artery</l/li>
+            >Deep palmar artery</l/li>
+            >Palmar carpal arteries</li>
+          </ul>
+          <p class="note">Mnemonic: Anatomical Pictures Can Definitely Deeply Please.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hand</h3>
+          <p>
+            The radial and ulnar arteries form the superficial palmar arch and deep palmar arch.
+          </p>
+          <p>
+            These arches give rise to arteries supplying the muscles, digits, and joints of the hand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="veins">
+      <h2>Upper Limb Veins</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Shoulder</h3>
+          <p><span class="label">Main vein:</span> Axillary vein</p>
+        </div>
+
+        <div class="card">
+          <h3>Arm</h3>
+          <p><span class="label">Main veins:</span> Brachial veins</p>
+        </div>
+
+        <div class="card">
+          <h3>Forearm</h3>
+          <p><span class="label">Main veins:</span> Basilic vein, cephalic vein, median forearm vein</p>
+        </div>
+
+        <div class="card">
+          <h3>Hand</h3>
+          <p>
+            The hand has deep veins and superficial veins that form the dorsal venous network.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nerves">
+      <h2>Nerves of the Upper Limb</h2>
+      <div class="card">
+        <p>
+          The nerves of the upper limb arise from the brachial plexus and include the musculocutaneous, axillary, median, radial, and ulnar nerves.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Nerve</th>
+            <th>Main supply</th>
+          </tr>
+          <tr>
+            <td>Musculocutaneous nerve</td>
+            <td>Anterior compartment of arm and skin of lateral forearm</td>
+          </tr>
+          <tr>
+            <td>Axillary nerve</td>
+            <td>Deltoid, teres minor, long head of triceps, shoulder joint skin</td>
+          </tr>
+          <tr>
+            <td>Median nerve</td>
+            <td>Most anterior forearm muscles, thenar eminence, lateral lumbricals, lateral hand skin</td>
+          </tr>
+          <tr>
+            <td>Radial nerve</td>
+            <td>Posterior compartments of arm and forearm, dorsolateral hand skin</td>
+          </tr>
+          <tr>
+            <td>Ulnar nerve</td>
+            <td>Flexor carpi ulnaris, medial FDP, hypothenar muscles, interossei, medial hand skin</td>
+          </tr>
+        </table>
+      </div>
+
+      <p class="note">The brachial plexus is formed by spinal nerve roots C5 to T1.</p>
+    </section>
+
+    <section class="section" id="revision">
+      <h2>Quick Revision</h2>
+      <ul>
+        >Subclavian artery continues as axillary artery, then brachial artery, then radial and ulnar arteries.</li>
+        >Axillary artery supplies the shoulder region and has six branches.</li>
+        >Brachial artery supplies the arm and ends in the cubital fossa.</li>
+        >Radial and ulnar arteries supply the forearm and hand.</li>
+        >Axillary vein drains the shoulder, brachial veins drain the arm, and basilic and cephalic veins drain the forearm.</li>
+        >Upper limb nerves come from the brachial plexus: musculocutaneous, axillary, median, radial, and ulnar.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

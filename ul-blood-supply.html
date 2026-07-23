@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDUCO | Blood Supply of Upper Limb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #050505;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.75;
+    }
+
+    header {
+      background: rgba(10, 10, 10, 0.96);
+      border-bottom: 2px solid #d4af37;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-top: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 34px;
+    }
+
+    .section {
+      background: #111;
+      border: 1px solid #222;
+      border-left: 4px solid #d4af37;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .label {
+      color: #d4af37;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .topic-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #e0e0e0;
+      text-decoration: none;
+      background: #101010;
+      font-size: 14px;
+    }
+
+    .topic-link:hover {
+      border-color: #d4af37;
+      color: #ffd700;
+    }
+
+    .note {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      min-width: 700px;
+    }
+
+    th, td {
+      border: 1px solid #222;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #151515;
+      color: #d4af37;
+    }
+
+    a:focus {
+      outline: 2px solid #ffd700;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 28px 16px 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">MEDUCO</a>
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+    <h1>Blood Supply of the Upper Limb</h1>
+    <p class="subtitle">A long, easy study page covering arteries, veins, and clinical points of the upper limb.</p>
+
+    <div class="top-links">
+      <a class="topic-link" href="#overview">Overview</a>
+      <a class="topic-link" href="#arteries">Arteries</a>
+      <a class="topic-link" href="#shoulder">Shoulder</a>
+      <a class="topic-link" href="#arm">Arm</a>
+      <a class="topic-link" href="#forearm">Forearm</a>
+      <a class="topic-link" href="#hand">Hand</a>
+      <a class="topic-link" href="#veins">Veins</a>
+      <a class="topic-link" href="#clinical">Clinical points</a>
+      <a class="topic-link" href="#revision">Quick revision</a>
+    </div>
+
+    <section class="section" id="overview">
+      <h2>Chapter Overview</h2>
+      <p>
+        The upper limb gets its blood supply from a continuous arterial pathway that starts as the subclavian artery and continues into the axillary artery, brachial artery, radial artery, and ulnar artery.
+      </p>
+      <p>
+        These vessels supply the shoulder, arm, forearm, wrist, and hand. The venous blood returns through superficial and deep veins, finally draining into the axillary and subclavian venous system.
+      </p>
+      <p>
+        This chapter is very important because many exam questions ask the main artery of each region, the branches of each artery, and the clinical use of pulses.
+      </p>
+    </section>
+
+    <section class="section" id="arteries">
+      <h2>Main Arteries</h2>
+      <div class="card">
+        <p>
+          The arterial supply of the upper limb is mainly provided by five large vessels.
+        </p>
+        <ul>
+          <li>Subclavian artery</li>
+          <li>Axillary artery</li>
+          <li>Brachial artery</li>
+          <li>Radial artery</li>
+          <li>Ulnar artery</li>
+        </ul>
+      </div>
+      <div class="card">
+        <p>
+          These arteries form one continuous pathway. As the vessel moves from the root of the neck to the hand, its name changes according to the region it supplies.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="shoulder">
+      <h2>Blood Supply of the Shoulder</h2>
+      <div class="card">
+        <h3>Axillary Artery</h3>
+        <p>
+          The axillary artery is the main artery of the shoulder region. It begins at the lateral border of the first rib as a continuation of the subclavian artery.
+        </p>
+        <p>
+          It ends at the lower border of teres major and becomes the brachial artery.
+        </p>
+        <p><span class="label">Branches of the axillary artery:</span></p>
+        <ul>
+          <li>Superior thoracic artery</li>
+          <li>Thoracoacromial artery</li>
+          <li>Lateral thoracic artery</li>
+          <li>Anterior circumflex humeral artery</li>
+          <li>Posterior circumflex humeral artery</li>
+          <li>Subscapular artery</li>
+        </ul>
+        <p class="note">Mnemonic: Save The Lions And Protect Species.</p>
+      </div>
+      <div class="card">
+        <p>
+          The axillary artery is important because it gives branches to the chest wall, shoulder muscles, scapular region, and upper arm.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="arm">
+      <h2>Blood Supply of the Arm</h2>
+      <div class="card">
+        <h3>Brachial Artery</h3>
+        <p>
+          The brachial artery is the continuation of the axillary artery. It starts at the lower border of teres major and runs down the arm.
+        </p>
+        <p>
+          It ends in the cubital fossa by dividing into the radial artery and ulnar artery.
+        </p>
+        <p><span class="label">Branches of the brachial artery:</span></p>
+        <ul>
+          <li>Profunda brachii artery</li>
+          <li>Nutrient artery to humerus</li>
+          <li>Superior ulnar collateral artery</li>
+          <li>Inferior ulnar collateral artery</li>
+        </ul>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Why the Brachial Artery Matters</h3>
+          <ul>
+            <li>It is the main artery used for blood pressure measurement.</li>
+            <li>It supplies the muscles and skin of the arm.</li>
+            <li>It is important in trauma and fracture cases.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Clinical Point</h3>
+          <p>
+            The brachial artery can be compressed in the arm to control bleeding. Its pulse is also commonly felt in the cubital fossa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="forearm">
+      <h2>Blood Supply of the Forearm</h2>
+      <div class="card">
+        <p>
+          The forearm is supplied mainly by the radial artery and ulnar artery. These arise from the brachial artery and travel on the lateral and medial sides of the forearm.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Radial Artery</h3>
+          <ul>
+            <li>Radial recurrent artery</li>
+            <li>Palmar carpal branch</li>
+            <li>Superficial carpal branch</li>
+          </ul>
+          <p class="note">The radial pulse is commonly felt on the lateral side of the wrist.</p>
+        </div>
+
+        <div class="card">
+          <h3>Ulnar Artery</h3>
+          <ul>
+            <li>Anterior ulnar recurrent artery</li>
+            <li>Posterior ulnar recurrent artery</li>
+            <li>Muscular arteries</li>
+            <li>Common interosseous artery</li>
+            <li>Dorsal carpal branch</li>
+            <li>Deep palmar branch</li>
+            <li>Palmar carpal branch</li>
+          </ul>
+          <p class="note">Mnemonic: Anatomical Pictures Can Definitely Deeply Please.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          The radial artery mainly travels on the lateral side of the forearm, while the ulnar artery travels on the medial side. Both arteries help form important networks at the wrist and hand.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="hand">
+      <h2>Blood Supply of the Hand</h2>
+      <div class="card">
+        <p>
+          In the hand, the radial and ulnar arteries join to form two important arches: the superficial palmar arch and the deep palmar arch.
+        </p>
+        <p>
+          These arches provide a rich blood supply to the palm, fingers, thumb, and muscles of the hand.
+        </p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Superficial Palmar Arch</h3>
+          <p>
+            This arch is formed mainly by the ulnar artery and completed by the superficial branch of the radial artery.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Deep Palmar Arch</h3>
+          <p>
+            This arch is formed mainly by the radial artery and completed by the deep branch of the ulnar artery.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <p>
+          The hand has a very efficient blood supply because these palmar arches allow collateral circulation. This means blood can still reach the hand even if one vessel is narrowed.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="veins">
+      <h2>Venous Drainage of the Upper Limb</h2>
+      <div class="card">
+        <p>
+          Veins drain blood from the hand, forearm, arm, and shoulder back toward the heart. They are divided into superficial veins and deep veins.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Hand</h3>
+          <p>
+            The hand has deep veins that accompany arteries and superficial veins that form the dorsal venous network.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Forearm</h3>
+          <ul>
+            <li>Basilic vein</li>
+            <li>Cephalic vein</li>
+            <li>Median forearm vein</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Arm</h3>
+          <p>
+            The arm is drained by paired brachial veins that travel with the brachial artery.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Shoulder</h3>
+          <p>
+            The main vein of the shoulder region is the axillary vein.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          The cephalic vein is on the lateral side of the upper limb, while the basilic vein is on the medial side. The median cubital vein often connects them and is commonly used for venipuncture.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="clinical">
+      <h2>Clinical Importance</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Radial Pulse</h3>
+          <p>
+            The radial pulse is a common pulse point used in clinical examination.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Brachial Pulse</h3>
+          <p>
+            The brachial pulse is used for blood pressure measurement.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Median Cubital Vein</h3>
+          <p>
+            This vein is often used for drawing blood because it is superficial and easy to access.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Collateral Circulation</h3>
+          <p>
+            The palmar arches help maintain blood flow if one artery is blocked or compressed.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="revision">
+      <h2>Quick Revision</h2>
+      <ul>
+        <li>Subclavian artery becomes axillary artery at the lateral border of the first rib.</li>
+        <li>Axillary artery becomes brachial artery at the lower border of teres major.</li>
+        <li>Brachial artery divides into radial and ulnar arteries in the cubital fossa.</li>
+        <li>Radial and ulnar arteries form the superficial and deep palmar arches.</li>
+        <li>Axillary vein drains the shoulder, brachial veins drain the arm, and superficial veins drain the forearm and hand.</li>
+        <li>The brachial plexus gives rise to the main nerves of the upper limb.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

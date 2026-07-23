@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDUCO | Lymphatic Drainage of Upper Limb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #050505;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.75;
+    }
+
+    header {
+      background: rgba(10, 10, 10, 0.96);
+      border-bottom: 2px solid #d4af37;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-top: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 34px;
+    }
+
+    .section {
+      background: #111;
+      border: 1px solid #222;
+      border-left: 4px solid #d4af37;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .label {
+      color: #d4af37;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .topic-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #e0e0e0;
+      text-decoration: none;
+      background: #101010;
+      font-size: 14px;
+    }
+
+    .topic-link:hover {
+      color: #ffd700;
+      border-color: #d4af37;
+    }
+
+    .note {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      min-width: 780px;
+    }
+
+    th, td {
+      border: 1px solid #222;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #151515;
+      color: #d4af37;
+    }
+
+    a:focus {
+      outline: 2px solid #ffd700;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 28px 16px 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">MEDUCO</a>
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+    <h1>Lymphatic Drainage of the Upper Limb</h1>
+    <p class="subtitle">Easy and long study notes covering lymphatic vessels, lymph nodes, and clinical importance.</p>
+
+    <div class="top-links">
+      <a class="topic-link" href="#overview">Overview</a>
+      <a class="topic-link" href="#vessels">Lymphatic vessels</a>
+      <a class="topic-link" href="#nodes">Lymph nodes</a>
+      <a class="topic-link" href="#pathway">Drainage pathway</a>
+      <a class="topic-link" href="#clinical">Clinical points</a>
+      <a class="topic-link" href="#revision">Quick revision</a>
+    </div>
+
+    <section class="section" id="overview">
+      <h2>Chapter Overview</h2>
+      <p>
+        The lymphatic system of the upper limb drains tissue fluid, proteins, and waste products back into the bloodstream. It also helps the body fight infection.
+      </p>
+      <p>
+        In the upper limb, lymphatic drainage follows the same general regional pattern as the blood vessels: hand, forearm, arm, and shoulder.
+      </p>
+      <p>
+        Most lymph from the upper limb eventually passes to the axillary lymph nodes and then into the subclavian lymph trunk.
+      </p>
+    </section>
+
+    <section class="section" id="vessels">
+      <h2>Lymphatic Vessels</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Superficial Lymphatic Vessels</h3>
+          <p>
+            These vessels lie in the skin and subcutaneous tissue.
+          </p>
+          <p>
+            They commonly follow the superficial veins of the upper limb, especially the cephalic vein and basilic vein.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Deep Lymphatic Vessels</h3>
+          <p>
+            These vessels travel deep in the limb and usually accompany the arteries.
+          </p>
+          <p>
+            They drain muscles, bones, joints, and deeper soft tissues.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>
+          Both superficial and deep lymphatic channels communicate with each other, so lymph can move through multiple pathways before reaching the lymph nodes.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="nodes">
+      <h2>Lymph Nodes of the Upper Limb</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>1. Cubital Nodes</h3>
+          <p>
+            Cubital lymph nodes are found near the elbow, especially in the cubital fossa or just above the medial epicondyle.
+          </p>
+          <p>
+            They receive lymph from the medial hand and forearm.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>2. Brachial Nodes</h3>
+          <p>
+            These nodes lie along the brachial vessels in the arm.
+          </p>
+          <p>
+            They receive lymph from the deep tissues of the arm.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>3. Deltopectoral Nodes</h3>
+          <p>
+            These nodes are located near the cephalic vein in the deltopectoral groove.
+          </p>
+          <p>
+            They help drain lymph from the lateral upper limb.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>4. Axillary Nodes</h3>
+          <p>
+            These are the most important lymph nodes of the upper limb.
+          </p>
+          <p>
+            They receive lymph from the upper limb, chest wall, and shoulder region.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <p><span class="label">Axillary lymph node groups:</span></p>
+        <ul>
+          <li>Pectoral nodes</li>
+          <li>Subscapular nodes</li>
+          <li>Humeral nodes</li>
+          <li>Central nodes</li>
+          <li>Apical nodes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="pathway">
+      <h2>Drainage Pathway</h2>
+      <div class="card">
+        <p>
+          Lymph from the hand and forearm first enters superficial and deep lymphatic vessels.
+        </p>
+        <p>
+          Some lymph passes to the cubital nodes, while most of it travels upward through the arm to the axillary nodes.
+        </p>
+        <p>
+          Lymph from the axillary nodes then passes to the apical axillary nodes, forms the subclavian lymph trunk, and finally drains into the venous system.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Region</th>
+            <th>Main drainage route</th>
+          </tr>
+          <tr>
+            <td>Hand</td>
+            <td>Superficial and deep lymphatic vessels</td>
+          </tr>
+          <tr>
+            <td>Forearm</td>
+            <td>Cubital nodes and brachial nodes</td>
+          </tr>
+          <tr>
+            <td>Arm</td>
+            <td>Brachial nodes and axillary nodes</td>
+          </tr>
+          <tr>
+            <td>Shoulder</td>
+            <td>Axillary nodes</td>
+          </tr>
+          <tr>
+            <td>Final drainage</td>
+            <td>Subclavian lymph trunk → thoracic duct or right lymphatic duct</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="clinical">
+      <h2>Clinical Importance</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Lymphedema</h3>
+          <p>
+            If lymph drainage is blocked, fluid collects in the tissues and causes swelling called lymphedema.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Infection Spread</h3>
+          <p>
+            Lymph nodes may enlarge when they fight infection in the hand, forearm, arm, or shoulder.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Breast and Axillary Nodes</h3>
+          <p>
+            Because the axillary nodes also receive lymph from the chest wall and breast, they are important in clinical examination and surgery.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Sentinel Nodes</h3>
+          <p>
+            Doctors may examine lymph nodes to check if cancer or infection has spread through lymphatic channels.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="revision">
+      <h2>Quick Revision</h2>
+      <ul>
+        <li>Superficial lymph vessels follow superficial veins.</li>
+        <li>Deep lymph vessels follow deep arteries.</li>
+        <li>Cubital nodes are near the elbow.</li>
+        <li>Brachial nodes are in the arm.</li>
+        <li>Axillary nodes are the most important nodes of the upper limb.</li>
+        <li>Final drainage goes to the subclavian lymph trunk.</li>
+        <li>Lymphatic blockage can cause swelling called lymphedema.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

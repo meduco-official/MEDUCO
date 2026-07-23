@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDUCO | Clinical and Applied Anatomy of Upper Limb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #050505;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.75;
+    }
+
+    header {
+      background: rgba(10, 10, 10, 0.96);
+      border-bottom: 2px solid #d4af37;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-top: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 34px;
+    }
+
+    .section {
+      background: #111;
+      border: 1px solid #222;
+      border-left: 4px solid #d4af37;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .label {
+      color: #d4af37;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .topic-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #e0e0e0;
+      text-decoration: none;
+      background: #101010;
+      font-size: 14px;
+    }
+
+    .topic-link:hover {
+      color: #ffd700;
+      border-color: #d4af37;
+    }
+
+    .note {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      min-width: 820px;
+    }
+
+    th, td {
+      border: 1px solid #222;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #151515;
+      color: #d4af37;
+    }
+
+    a:focus {
+      outline: 2px solid #ffd700;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 28px 16px 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">MEDUCO</a>
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+    <h1>Clinical and Applied Anatomy of the Upper Limb</h1>
+    <p class="subtitle">Easy long notes on common injuries, pulse points, nerve lesions, fractures, and applied anatomy.</p>
+
+    <div class="top-links">
+      <a class="topic-link" href="#overview">Overview</a>
+      <a class="topic-link" href="#bones">Bones</a>
+      <a class="topic-link" href="#joints">Joints</a>
+      <a class="topic-link" href="#muscles">Muscles</a>
+      <a class="topic-link" href="#nerves">Nerves</a>
+      <a class="topic-link" href="#vessels">Blood vessels</a>
+      <a class="topic-link" href="#hand">Hand</a>
+      <a class="topic-link" href="#clinical">Clinical points</a>
+      <a class="topic-link" href="#revision">Quick revision</a>
+    </div>
+
+    <section class="section" id="overview">
+      <h2>Chapter Overview</h2>
+      <p>
+        Clinical anatomy means studying anatomy in a practical way so that we can understand disease, injury, diagnosis, examination, and treatment. Applied anatomy means the same knowledge used in real life and in medicine.
+      </p>
+      <p>
+        The upper limb is one of the most important regions for clinical anatomy because it is used in daily activities, trauma, injections, blood pressure measurement, blood collection, and nerve examination.
+      </p>
+      <p>
+        This chapter explains why the structures of the upper limb are important in real medical practice in a very simple and student-friendly way.
+      </p>
+    </section>
+
+    <section class="section" id="bones">
+      <h2>Clinical Anatomy of Bones</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Clavicle</h3>
+          <p>
+            The clavicle is commonly fractured because it is thin and lies in a superficial position.
+          </p>
+          <p>
+            It helps connect the upper limb to the trunk, so a fracture may affect shoulder movement.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Humerus</h3>
+          <p>
+            Fractures of the humerus can damage important nerves and vessels around it.
+          </p>
+          <p>
+            The radial nerve may be affected in a shaft fracture, causing weakness of wrist and finger extension.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Radius and Ulna</h3>
+          <p>
+            These bones are important for forearm rotation.
+          </p>
+          <p>
+            A fracture may affect pronation and supination, which are needed for turning the palm up and down.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Scaphoid</h3>
+          <p>
+            The scaphoid is a clinically important carpal bone because fractures may be missed early.
+          </p>
+          <p>
+            Pain in the anatomical snuffbox is a common sign of scaphoid injury.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="joints">
+      <h2>Clinical Anatomy of Joints</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Shoulder Joint</h3>
+          <p>
+            The shoulder joint allows a very wide range of movement, so it is less stable than the hip.
+          </p>
+          <p>
+            Because of this, dislocation is more common in the shoulder.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Elbow Joint</h3>
+          <p>
+            The elbow is a hinge joint and mainly allows flexion and extension.
+          </p>
+          <p>
+            It is stable, but stiffness or injury can severely affect daily function.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Wrist Joint</h3>
+          <p>
+            The wrist is very important for hand positioning and grip.
+          </p>
+          <p>
+            Injuries here may reduce fine movements and strength.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Finger Joints</h3>
+          <p>
+            The interphalangeal joints allow flexion and extension, which are important in writing, holding, and grasping.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="muscles">
+      <h2>Clinical Anatomy of Muscles</h2>
+      <div class="card">
+        <p>
+          Muscles of the upper limb work with bones and joints to produce movement. Injury to a muscle or tendon may reduce power, limit motion, or cause pain.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Rotator Cuff</h3>
+          <p>
+            The rotator cuff stabilizes the shoulder joint.
+          </p>
+          <p>
+            Tears can cause pain and weakness during arm lifting.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Tennis Elbow</h3>
+          <p>
+            This condition is due to overuse of the extensor muscles of the forearm.
+          </p>
+          <p>
+            Pain is usually felt on the lateral side of the elbow.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Trigger Finger</h3>
+          <p>
+            Tendon inflammation can make finger movement painful or jerky.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Dupuytren Contracture</h3>
+          <p>
+            Thickening of the palmar fascia can cause flexion deformity of the fingers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nerves">
+      <h2>Clinical Anatomy of Nerves</h2>
+
+      <div class="card">
+        <p>
+          The nerves of the upper limb come from the brachial plexus. Injury to a nerve may cause weakness, loss of sensation, tingling, or paralysis in its area of supply.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Axillary Nerve Injury</h3>
+          <p>
+            This may happen after shoulder dislocation or fracture of the surgical neck of the humerus.
+          </p>
+          <p>
+            It can cause weakness of the deltoid and loss of sensation over the shoulder region.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Musculocutaneous Nerve Injury</h3>
+          <p>
+            This affects flexion of the elbow and sensation on the lateral forearm.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Radial Nerve Injury</h3>
+          <p>
+            Radial nerve damage may cause wrist drop because the wrist extensors are weak.
+          </p>
+          <p>
+            This can occur in fractures of the humeral shaft or compression in the spiral groove.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Median Nerve Injury</h3>
+          <p>
+            Injury to the median nerve may affect thumb opposition and many forearm flexors.
+          </p>
+          <p>
+            It is important in carpal tunnel syndrome.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Ulnar Nerve Injury</h3>
+          <p>
+            The ulnar nerve is vulnerable at the elbow and wrist.
+          </p>
+          <p>
+            Injury may cause clawing of the hand and weakness of fine finger movements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vessels">
+      <h2>Clinical Anatomy of Blood Vessels</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Brachial Artery</h3>
+          <p>
+            It is the main artery used for measuring blood pressure.
+          </p>
+          <p>
+            It may be injured in fractures or trauma to the arm.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Radial Artery</h3>
+          <p>
+            The radial pulse is commonly checked at the wrist.
+          </p>
+          <p>
+            The artery is also used for arterial cannulation in some procedures.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Cephalic and Basilic Veins</h3>
+          <p>
+            These superficial veins are important for venipuncture and intravenous access.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Median Cubital Vein</h3>
+          <p>
+            This is the most common vein used for blood sampling because it is superficial and easy to see.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hand">
+      <h2>Clinical Anatomy of the Hand</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Carpal Tunnel Syndrome</h3>
+          <p>
+            Compression of the median nerve in the carpal tunnel causes pain, tingling, and weakness of the hand.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Thenar Wasting</h3>
+          <p>
+            Severe median nerve injury may cause wasting of thenar muscles and loss of thumb opposition.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Claw Hand</h3>
+          <p>
+            Ulnar nerve injury can produce clawing of the fingers because the intrinsic hand muscles are affected.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Hand Grasp</h3>
+          <p>
+            A strong grip depends on the coordinated action of muscles, joints, nerves, and blood supply.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="clinical">
+      <h2>Common Applied and Clinical Conditions</h2>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Condition</th>
+            <th>Structure involved</th>
+            <th>Simple explanation</th>
+          </tr>
+          <tr>
+            <td>Fracture of clavicle</td>
+            <td>Clavicle</td>
+            <td>Usually due to a fall or direct trauma; may affect shoulder support.</td>
+          </tr>
+          <tr>
+            <td>Shoulder dislocation</td>
+            <td>Shoulder joint</td>
+            <td>Common because the joint is mobile but not very stable.</td>
+          </tr>
+          <tr>
+            <td>Wrist drop</td>
+            <td>Radial nerve</td>
+            <td>Loss of wrist extension makes the hand hang down.</td>
+          </tr>
+          <tr>
+            <td>Carpal tunnel syndrome</td>
+            <td>Median nerve</td>
+            <td>Compression causes tingling and weakness in the hand.</td>
+          </tr>
+          <tr>
+            <td>Claw hand</td>
+            <td>Ulnar nerve</td>
+            <td>Intrinsic hand muscles are weak, so fingers become claw-like.</td>
+          </tr>
+          <tr>
+            <td>Tennis elbow</td>
+            <td>Extensor origin of forearm</td>
+            <td>Overuse causes pain on the lateral side of the elbow.</td>
+          </tr>
+          <tr>
+            <td>Scaphoid fracture</td>
+            <td>Scaphoid bone</td>
+            <td>Causes pain in the anatomical snuffbox and may need careful imaging.</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why Clinical Anatomy Is Important</h2>
+      <div class="card">
+        <p>
+          Clinical anatomy helps us understand how the body behaves in disease and injury. It is useful in physical examination, surgery, radiology, injections, fracture management, and rehabilitation.
+        </p>
+        <p>
+          For the upper limb, this is especially important because the limb is used for movement, gripping, carrying, writing, and many precise daily tasks.
+        </p>
+        <p>
+          If a student understands the anatomy of the upper limb clearly, it becomes easier to understand clinical signs, nerve injuries, artery pulses, and common hospital procedures.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="revision">
+      <h2>Quick Revision</h2>
+      <ul>
+        <li>Clinical anatomy means anatomy used in diagnosis and treatment.</li>
+        <li>Applied anatomy means anatomy used in practical life and medicine.</li>
+        <li>Clavicle fractures are common because the bone is superficial.</li>
+        <li>Shoulder dislocation is common because the joint is mobile.</li>
+        <li>Radial nerve injury causes wrist drop.</li>
+        <li>Median nerve injury may cause carpal tunnel syndrome.</li>
+        <li>Ulnar nerve injury may cause claw hand.</li>
+        <li>Median cubital vein is commonly used for blood collection.</li>
+        <li>Brachial artery is important for blood pressure measurement.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Final Summary</h2>
+      <div class="card">
+        <p>
+          The upper limb has many clinically important structures. Bones can fracture, joints can dislocate, muscles and tendons can tear, nerves can get compressed or injured, and vessels can be used for examination and procedures.
+        </p>
+        <p>
+          Learning the upper limb in a clinical way makes anatomy easier to remember and more useful in real medical practice.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
