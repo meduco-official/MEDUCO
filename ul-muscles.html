@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDUCO | Muscles of the Upper Limb</title>
+  //fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #050505;
+      color: #e0e0e0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      background: rgba(10, 10, 10, 0.96);
+      border-bottom: 2px solid #d4af37;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover,
+    .topic-link:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-top: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      background: #111;
+      border: 1px solid #222;
+      border-left: 4px solid #d4af37;
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    .muscle {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #222;
+    }
+
+    .muscle:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .label {
+      color: #d4af37;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #222;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #151515;
+      color: #d4af37;
+    }
+
+    .note {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .topic-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #333;
+      border-radius: 999px;
+      color: #e0e0e0;
+      text-decoration: none;
+      background: #101010;
+      font-size: 14px;
+    }
+
+    .topic-link:hover {
+      border-color: #d4af37;
+    }
+
+    a:focus {
+      outline: 2px solid #ffd700;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px 18px;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 28px 16px 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">MEDUCO</a>
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+    <h1>Muscles of the Upper Limb</h1>
+    <p class="subtitle">High-yield anatomy notes with origin, insertion, nerve supply, action, and clinical points.</p>
+
+    <div class="top-links">
+      <a class="topic-link" href="#trunk">Trunk connections</a>
+      <a class="topic-link" href="#vertebral">Vertebral column connections</a>
+      <a class="topic-link" href="#shoulder">Shoulder region</a>
+      <a class="topic-link" href="#arm">Arm muscles</a>
+      <a class="topic-link" href="#forearm">Forearm muscles</a>
+      <a class="topic-link" href="#hand">Hand muscles</a>
+      <a class="topic-link" href="#revision">Quick revision</a>
+    </div>
+
+    <section class="section" id="intro">
+      <h2>Overview</h2>
+      <p>
+        The muscles of the upper limb are grouped by region. For each muscle, the most exam-relevant details are origin, insertion, nerve supply, action, and clinical correlations.
+      </p>
+      <p>
+        This page covers all major muscle groups in a clear revision format.
+      </p>
+    </section>
+
+    <section class="section" id="trunk">
+      <h2>A. Muscles Connecting Upper Limb to Trunk</h2>
+
+      <div class="muscle">
+        <h3>1. Pectoralis Major</h3>
+        <p><span class="label">Origin:</span> Clavicular head, sternocostal head, and abdominal head.</p>
+        <p><span class="label">Insertion:</span> Lateral lip of the bicipital groove of humerus.</p>
+        <p><span class="label">Nerve supply:</span> Medial and lateral pectoral nerves.</p>
+        <p><span class="label">Action:</span> Adduction and medial rotation of arm; clavicular head flexes arm.</p>
+        <p><span class="label">Clinical note:</span> Used in breast reconstruction; tested by pushing hands against hips.</p>
+      </div>
+
+      <div class="muscle">
+        <h3>2. Pectoralis Minor</h3>
+        <p><span class="label">Origin:</span> 3rd, 4th, 5th ribs.</p>
+        <p><span class="label">Insertion:</span> Coracoid process of scapula.</p>
+        <p><span class="label">Nerve supply:</span> Medial pectoral nerve.</p>
+        <p><span class="label">Action:</span> Draws scapula forward and downward; raises ribs in forced inspiration.</p>
+        <p><span class="label">Clinical note:</span> Divides axillary artery into three parts.</p>
+      </div>
+
+      <div class="muscle">
+        <h3>3. Serratus Anterior</h3>
+        <p><span class="label">Origin:</span> Outer surfaces of upper 8 ribs.</p>
+        <p><span class="label">Insertion:</span> Medial border of scapula.</p>
+        <p><span class="label">Nerve supply:</span> Long thoracic nerve.</p>
+        <p><span class="label">Action:</span> Rotates scapula for full abduction and keeps it pressed against chest wall.</p>
+        <p><span class="label">Clinical note:</span> Injury causes winging of scapula.</p>
+      </div>
+
+      <div class="muscle">
+        <h3>4. Subclavius</h3>
+        <p><span class="label">Origin:</span> Rib 1.</p>
+        <p><span class="label">Insertion:</span> Clavicle.</p>
+        <p><span class="label">Nerve supply:</span> Nerve to subclavius.</p>
+        <p><span class="label">Action:</span> Protects subclavian vessels from fractured clavicle.</p>
+      </div>
+    </section>
+
+    <section class="section" id="vertebral">
+      <h2>B. Muscles Connecting Upper Limb to Vertebral Column</h2>
+
+      <div class="muscle">
+        <h3>1. Trapezius</h3>
+        <p><span class="label">Origin:</span> Occipital bone, ligamentum nuchae, spines of thoracic vertebrae.</p>
+        <p><span class="label">Insertion:</span> Lateral third of clavicle, acromion, spine of scapula.</p>
+        <p><span class="label">Nerve supply:</span> Spinal accessory nerve; C3, C4 for proprioception.</p>
+        <p><span class="label">Action:</span> Elevates, retracts, and depresses scapula; rotates scapula for abduction.</p>
+      </div>
+
+      <div class="muscle">
+        <h3>2. Latissimus Dorsi</h3>
+        <p><span class="label">Origin:</span> Lower thoracic vertebrae, lumbar fascia, iliac crest, lower ribs.</p>
+        <p><span class="label">Insertion:</span> Floor of intertubercular groove of humerus.</p>
+        <p><span class="label">Nerve supply:</span> Thoracodorsal nerve.</p>
+        <p><span class="label">Action:</span> Extension, adduction, and medial rotation of arm.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>3. Levator Scapulae</h3>
+          <p><span class="label">Origin:</span> Transverse processes of upper 4 cervical vertebrae.</p>
+          <p><span class="label">Insertion:</span> Superior angle of scapula.</p>
+          <p><span class="label">Nerve supply:</span> C3, C4 and dorsal scapular nerve.</p>
+          <p><span class="label">Action:</span> Elevates scapula.</p>
+        </div>
+        <div class="card">
+          <h3>4. Rhomboid Major and Minor</h3>
+          <p><span class="label">Origin:</span> Spines of upper thoracic and lower cervical vertebrae.</p>
+          <p><span class="label">Insertion:</span> Medial border of scapula.</p>
+          <p><span class="label">Nerve supply:</span> Dorsal scapular nerve.</p>
+          <p><span class="label">Action:</span> Retract and elevate scapula.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shoulder">
+      <h2>C. Muscles of the Shoulder Region</h2>
+
+      <div class="muscle">
+        <h3>1. Deltoid</h3>
+        <p><span class="label">Origin:</span> Lateral third of clavicle, acromion, and spine of scapula.</p>
+        <p><span class="label">Insertion:</span> Deltoid tuberosity of humerus.</p>
+        <p><span class="label">Nerve supply:</span> Axillary nerve.</p>
+        <p><span class="label">Action:</span> Main abductor of arm; anterior fibers flex and medially rotate, posterior fibers extend and laterally rotate.</p>
+        <p><span class="label">Clinical note:</span> Injury causes wasting of deltoid and loss of abduction.</p>
+      </div>
+
+      <div class="muscle">
+        <h3>2. Rotator Cuff Muscles</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Muscle</th>
+              <th>Origin</th>
+              <th>Insertion</th>
+              <th>Nerve supply</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Supraspinatus</td>
+              <td>Supraspinous fossa</td>
+              <td>Greater tubercle, upper facet</td>
+              <td>Suprascapular nerve</td>
+              <td>Initiates abduction</td>
+            </tr>
+            <tr>
+              <td>Infraspinatus</td>
+              <td>Infraspinous fossa</td>
+              <td>Greater tubercle, middle facet</td>
+              <td>Suprascapular nerve</td>
+              <td>Lateral rotation</td>
+            </tr>
+            <tr>
+              <td>Teres minor</td>
+              <td>Upper lateral border of scapula</td>
+              <td>Greater tubercle, lower facet</td>
+              <td>Axillary nerve</td>
+              <td>Lateral rotation</td>
+            </tr>
+            <tr>
+              <td>Subscapularis</td>
+              <td>Subscapular fossa</td>
+              <td>Lesser tubercle</td>
+              <td>Upper and lower subscapular nerves</td>
+              <td>Medial rotation</td>
+            </tr>
+          </table>
+        </div>
+        <p class="note">The rotator cuff stabilizes the shoulder joint. Supraspinatus tendon is commonly affected in painful arc syndrome.</p>
+      </div>
+
+      <div class="muscle">
+        <h3>3. Teres Major</h3>
+        <p><span class="label">Origin:</span> Lower lateral border of scapula.</p>
+        <p><span class="label">Insertion:</span> Medial lip of intertubercular groove.</p>
+        <p><span class="label">Nerve supply:</span> Lower subscapular nerve.</p>
+        <p><span class="label">Action:</span> Medial rotation and adduction.</p>
+      </div>
+    </section>
+
+    <section class="section" id="arm">
+      <h2>D. Muscles of the Arm</h2>
+
+      <div class="muscle">
+        <h3>Anterior Compartment</h3>
+        <p>All are supplied by musculocutaneous nerve except brachialis, which has dual supply.</p>
+        <u
+        <ul>
+          ><span class="label">Biceps brachii:</span> Powerful supinator and flexor of elbow; long head rupture causes Popeye sign.</l/li>
+          ><span class="label">Coracobrachialis:</span> Flexes and adducts arm; pierced by musculocutaneous nerve.</l/li>
+          ><span class="label">Brachialis:</span> Main flexor of elbow joint; supplied by musculocutaneous nerve and a small radial twig.</li>
+        </ul>
+      </div>
+
+      <div class="muscle">
+        <h3>Posterior Compartment</h3>
+        <p><span class="label">Triceps brachii:</span> Main extensor of elbow; long head also extends and adducts shoulder.</p>
+        <p><span class="label">Nerve supply:</span> Radial nerve.</p>
+        <p><span class="label">Clinical note:</span> Radial nerve may be injured in humeral shaft fractures or with crutch use.</p>
+      </div>
+    </section>
+
+    <section class="section" id="forearm">
+      <h2>E. Muscles of the Forearm</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Flexor Compartment</h3>
+          <p>Mostly median nerve, except flexor carpi ulnaris and medial half of flexor digitorum profundus.</p>
+          <u
+          <ul>
+            >Pronator teres — pronates forearm.</l/li>
+            >Flexor carpi radialis — flexes and abducts wrist.</l/li>
+            >Palmaris longus — flexes wrist, tenses palmar fascia.</l/li>
+            >Flexor carpi ulnaris — flexes and adducts wrist.</l/li>
+            >Flexor digitorum superficialis — flexes PIP joints.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Deep Flexors</h3>
+          <u
+          <ul>
+            >Flexor digitorum profundus — flexes DIP joints.</l/li>
+            >Flexor pollicis longus — flexes thumb.</l/li>
+            >Pronator quadratus — pronates forearm.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Extensor Compartment</h3>
+          <p>All supplied by radial nerve, mainly posterior interosseous branch in deep layer.</p>
+          <u
+          <ul>
+            >Brachioradialis — flexes elbow.</l/li>
+            >Extensor carpi radialis longus and brevis.</l/li>
+            >Extensor digitorum — extends fingers.</l/li>
+            >Extensor digiti minimi.</l/li>
+            >Extensor carpi ulnaris.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Deep Extensors</h3>
+          <u
+          <ul>
+            >Supinator — supinates forearm.</l/li>
+            >Abductor pollicis longus.</l/li>
+            >Extensor pollicis brevis.</l/li>
+            >Extensor pollicis longus.</l/li>
+            >Extensor indicis.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="note">Wrist drop occurs in radial nerve injury due to loss of wrist and finger extensors.</p>
+    </section>
+
+    <section class="section" id="hand">
+      <h2>F. Muscles of the Hand</h2>
+
+      <u
+
+      <ul>
+        ><span class="label">Thenar muscles:</span> Abductor pollicis brevis, flexor pollicis brevis, opponens pollicis — recurrent branch of median nerve.</l/li>
+        ><span class="label">Hypothenar muscles:</span> Abductor digiti minimi, flexor digiti minimi brevis, opponens digiti minimi — deep branch of ulnar nerve.</l/li>
+        ><span class="label">Adductor pollicis:</span> Deep branch of ulnar nerve; tested in Froment’s sign.</l/li>
+        ><span class="label">Lumbricals:</span> Flex MCP joints and extend IP joints; lateral 2 by median nerve, medial 2 by ulnar nerve.</l/li>
+        ><span class="label">Interossei:</span> Dorsal interossei abduct, palmar interossei adduct; all supplied by deep branch of ulnar nerve.</li>
+      </ul>
+
+      <p class="note">Ulnar nerve injury may cause claw hand with hyperextension at MCP joints and flexion at IP joints.</p>
+    </section>
+
+    <section class="section" id="revision">
+      <h2>Quick Revision</h2>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Group</th>
+            <th>Main nerve</th>
+          </tr>
+          <tr><td>Shoulder muscles</td><td>Axillary nerve</td></tr>
+          <tr><td>Rotator cuff</td><td>Suprascapular nerve</td></tr>
+          <tr><td>Arm flexors</td><td>Musculocutaneous nerve</td></tr>
+          <tr><td>Arm extensor</td><td>Radial nerve</td></tr>
+          <tr><td>Forearm flexors</td><td>Median nerve</td></tr>
+          <tr><td>Flexor carpi ulnaris + medial half FDP</td><td>Ulnar nerve</td></tr>
+          <tr><td>Forearm extensors</td><td>Radial nerve</td></tr>
+          <tr><td>Thenar muscles</td><td>Median nerve</td></tr>
+          <tr><td>Hypothenar + adductor pollicis + interossei</td><td>Ulnar nerve</td></tr>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
