@@ -639,4 +639,25 @@ header img:hover {
     transform: translateX(5px);
     box-shadow: none;
     border: none;
+}.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+}
+
+.logo-text{
+    font-family:'Cinzel', serif;
+    font-size:3rem;
+    font-weight:600;
+    letter-spacing:6px;
+    background:linear-gradient(90deg,#FFD700,#FFF1A8,#FFD700);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.stethoscope{
+    width:48px;
+    height:48px;
 }
