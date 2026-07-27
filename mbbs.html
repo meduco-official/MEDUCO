@@ -3,260 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive MBBS 19 Subjects Mnemonics</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .subject-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 15px;
-        }
-        .subject-card {
-            background: #eef2f3;
-            border-left: 5px solid #3498db;
-            padding: 15px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: transform 0.2s, background 0.2s;
-        }
-        .subject-card:hover {
-            transform: translateY(-3px);
-            background: #dfe6e9;
-        }
-        .subject-card h3 {
-            margin: 0 0 10px 0;
-            color: #2980b9;
-            font-size: 1.1em;
-        }
-        .code-tag {
-            display: inline-block;
-            background: #34495e;
-            color: #fff;
-            font-size: 0.8em;
-            padding: 2px 6px;
-            border-radius: 3px;
-            margin-bottom: 8px;
-        }
-        /* Modal Popup Styling */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        .modal-content {
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1.5em;
-            font-weight: bold;
-            cursor: pointer;
-            color: #aaa;
-        }
-        .close-btn:hover {
-            color: #000;
-        }
-        .modal-content ul {
-            padding-left: 20px;
-        }
-        .modal-content li {
-            margin-bottom: 8px;
-        }
-    </style>
+    <title>MBBS 19 Subjects Mnemonics | MEDUCO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+    <!-- ================= NAVBAR ================= -->
     <header>
-        <h1>MBBS 19 Subjects Mnemonics Hub</h1>
-        <p>Click on any subject card below to open and view your detailed mnemonics!</p>
+        <a href="index.html" class="logo">MEDUCO 🩺</a>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link active">MBBS Mnemonics</a>
+        </nav>
     </header>
 
-    <div class="subject-grid">
-        <!-- Pre-Clinical -->
-        <div class="subject-card" onclick="openModal('Anatomy', 'SUB-01', ['Brachial Plexus roots: <b>RTDCD</b> (Roots, Trunks, Divisions, Cords, Branches)', 'Skull Foramina: List of structures passing through Foramen Magnum, Ovale, etc.'])">
-            <span class="code-tag">SUB-01</span>
-            <h3>Anatomy</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Physiology', 'SUB-02', ['Cranial Nerves: <b>O</b>n <b>O</b>ld <b>O</b>lympus <b>T</b>owering <b>T</b>ops...', 'Renal Clearance: Detailed breakdown formulas.'])">
-            <span class="code-tag">SUB-02</span>
-            <h3>Physiology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Biochemistry', 'SUB-03', ['TCA Cycle Intermediates: <b>C</b>itrate <b>I</b>s <b>K</b>eps <b>S</b>afe ...', 'Essential Amino Acids: <b>PVT TIM HALL</b>'])">
-            <span class="code-tag">SUB-03</span>
-            <h3>Biochemistry</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
+    <!-- ================= HEADER ================= -->
+    <section class="hero" style="min-height: 30vh; padding: 40px 8%;">
+        <h1>MBBS <span class="gold-text">Mnemonics</span></h1>
+        <p>Select a subject below to unlock high-yield memory tricks for all 19 MBBS subjects.</p>
+    </section>
 
-        <!-- Para-Clinical -->
-        <div class="subject-card" onclick="openModal('Pathology', 'SUB-04', ['Types of Necrosis examples', 'Amyloidosis staining properties'])">
-            <span class="code-tag">SUB-04</span>
-            <h3>Pathology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Pharmacology', 'SUB-05', ['Cholinergic vs Anticholinergic side effects', 'Antibiotic classes and mechanisms'])">
-            <span class="code-tag">SUB-05</span>
-            <h3>Pharmacology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Microbiology', 'SUB-06', ['Gram-positive vs Gram-negative organisms', 'DNA vs RNA viral families'])">
-            <span class="code-tag">SUB-06</span>
-            <h3>Microbiology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Forensic Medicine & Toxicology (FMT)', 'SUB-07', ['Stages of Rigor Mortis timeline', 'Poisons and their specific antidotes'])">
-            <span class="code-tag">SUB-07</span>
-            <h3>Forensic Medicine & Toxicology (FMT)</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Community Medicine (PSM)', 'SUB-08', ['National Health Programs launch years', 'Universal Immunization Schedule charts'])">
-            <span class="code-tag">SUB-08</span>
-            <h3>Community Medicine (PSM)</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-
-        <!-- Clinical Subjects -->
-        <div class="subject-card" onclick="openModal('General Medicine', 'SUB-09', ['Heart Murmurs localization and radiation', 'Autoimmune disease criteria'])">
-            <span class="code-tag">SUB-09</span>
-            <h3>General Medicine</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('General Surgery', 'SUB-10', ['Wound healing stages & types', 'Shock classifications and fluid management'])">
-            <span class="code-tag">SUB-10</span>
-            <h3>General Surgery</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Obstetrics & Gynaecology (OBG)', 'SUB-11', ['Pelvic types (Gynecoid, Android, etc.)', 'Stages of Labor mechanisms'])">
-            <span class="code-tag">SUB-11</span>
-            <h3>Obstetrics & Gynaecology (OBG)</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Pediatrics', 'SUB-12', ['Developmental Milestones (Gross motor, Social, etc.)', 'Cyanotic vs Acyanotic heart defects'])">
-            <span class="code-tag">SUB-12</span>
-            <h3>Pediatrics</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Ophthalmology', 'SUB-13', ['Cranial nerve palsies affecting extraocular muscles', 'Glaucoma types comparison'])">
-            <span class="code-tag">SUB-13</span>
-            <h3>Ophthalmology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Otorhinolaryngology (ENT)', 'SUB-14', ['Audiometry reading symbols (Air vs Bone conduction)', 'Neck spaces anatomy'])">
-            <span class="code-tag">SUB-14</span>
-            <h3>Otorhinolaryngology (ENT)</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Orthopedics', 'SUB-15', ['Fracture classifications (Salter-Harris, etc.)', 'Nerve injuries associated with long bone sites'])">
-            <span class="code-tag">SUB-15</span>
-            <h3>Orthopedics</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Dermatology', 'SUB-16', ['Primary and secondary skin lesions', 'Blistering disorders (Pemphigus vs Pemphigoid)'])">
-            <span class="code-tag">SUB-16</span>
-            <h3>Dermatology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Psychiatry', 'SUB-17', ['DSM criteria highlights for major disorders', 'Defense mechanisms classification'])">
-            <span class="code-tag">SUB-17</span>
-            <h3>Psychiatry</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Radiology', 'SUB-18', ['Classic X-ray signs (Coffee bean sign, Double bubble, etc.)', 'Contrast reaction management'])">
-            <span class="code-tag">SUB-18</span>
-            <h3>Radiology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-        <div class="subject-card" onclick="openModal('Anesthesiology', 'SUB-19', ['ASA Physical Status Classification (Class I to VI)', 'Local Anesthetic systemic toxicity (LAST)'])">
-            <span class="code-tag">SUB-19</span>
-            <h3>Anesthesiology</h3>
-            <p>Click to open mnemonics...</p>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Structure -->
-<div id="mnemonicModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
-        <span id="modalCodeTag" class="code-tag"></span>
-        <h2 id="modalTitle" style="color: #2980b9; margin-top: 5px;"></h2>
-        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 15px;">
-        <ul id="modalList">
-            <!-- Dynamic content injected here -->
-        </ul>
-    </div>
-</div>
-
-<script>
-    function openModal(subjectName, subjectCode, mnemonicsArray) {
-        document.getElementById('modalTitle').innerText = subjectName;
-        document.getElementById('modalCodeTag').innerText = subjectCode;
+    <!-- ================= 19 SUBJECTS ================= -->
+    <section class="features" style="padding-top: 0;">
         
-        const listElement = document.getElementById('modalList');
-        listElement.innerHTML = ''; // Clear previous items
-        
-        mnemonicsArray.forEach(item => {
-            const li = document.createElement('li');
-            li.innerHTML = item;
-            listElement.appendChild(li);
-        });
-        
-        document.getElementById('mnemonicModal').style.display = 'flex';
-    }
+        <!-- PRE-CLINICAL -->
+        <h2 style="font-size: 28px; margin: 40px 0 20px; text-shadow: 0 0 10px rgba(212,175,55,0.5);">Pre-Clinical (Phase 1)</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🦴</div>
+                <h3>Anatomy</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🫀</div>
+                <h3>Physiology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🧬</div>
+                <h3>Biochemistry</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+        </div>
 
-    function closeModal() {
-        document.getElementById('mnemonicModal').style.display = 'none';
-    }
+        <!-- PARA-CLINICAL -->
+        <h2 style="font-size: 28px; margin: 60px 0 20px; text-shadow: 0 0 10px rgba(212,175,55,0.5);">Para-Clinical (Phase 2)</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💊</div>
+                <h3>Pharmacology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🔬</div>
+                <h3>Pathology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🦠</div>
+                <h3>Microbiology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">⚖️</div>
+                <h3>Forensic Medicine</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+        </div>
 
-    // Close modal when clicking outside the box
-    window.onclick = function(event) {
-        const modal = document.getElementById('mnemonicModal');
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
-</script>
+        <!-- CLINICAL -->
+        <h2 style="font-size: 28px; margin: 60px 0 20px; text-shadow: 0 0 10px rgba(212,175,55,0.5);">Clinical (Phase 3 & 4)</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🌍</div>
+                <h3>Community Med (PSM)</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">👂</div>
+                <h3>ENT</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">👁️</div>
+                <h3>Ophthalmology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🩺</div>
+                <h3>General Medicine</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🔪</div>
+                <h3>General Surgery</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">👶</div>
+                <h3>Pediatrics</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🤰</div>
+                <h3>Obstetrics & Gynae</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🦴</div>
+                <h3>Orthopedics</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>Psychiatry</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">🧴</div>
+                <h3>Dermatology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">💉</div>
+                <h3>Anesthesiology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+            <div class="card">
+                <div class="icon">☢️</div>
+                <h3>Radiology</h3>
+                <a href="#" class="explore-btn" style="padding: 10px 20px; font-size: 14px;">Open Mnemonics</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <h2>MEDUCO</h2>
+        <p><span class="luxury-text">Where Medical Knowledge Becomes Simple.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
