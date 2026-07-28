@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacology Mnemonics | MEDUCO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .mnemonic-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section-header {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            color: #D4AF37;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+            padding-bottom: 10px;
+            margin: 50px 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .mnemonic-item {
+            background: rgba(20, 20, 20, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-left: 4px solid #D4AF37;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .mnemonic-item h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .mnemonic-label {
+            font-size: 18px;
+            font-weight: 600;
+            color: #D4AF37;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mnemonic-value {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0) 100%);
+            padding: 6px 15px;
+            border-left: 3px solid #D4AF37;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        .mnemonic-desc {
+            font-size: 15px;
+            color: #cccccc;
+            line-height: 1.8;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        .mnemonic-desc b {
+            color: #ffffff;
+        }
+        
+        .premium-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .premium-table th, .premium-table td {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 15px;
+            text-align: left;
+            color: #ccc;
+        }
+        .premium-table th {
+            background: rgba(212, 175, 55, 0.15);
+            color: #D4AF37;
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <a href="index.html" class="logo">MEDUCO 🩺</a>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="mbbs.html" class="nav-link">MBBS Mnemonics</a>
+            <a href="#" class="nav-link active">Pharmacology</a>
+        </nav>
+    </header>
+
+    <!-- ================= HEADER & INTRO ================= -->
+    <section class="hero" style="min-height: 30vh; padding: 40px 8%;">
+        <h1>Subject: <span class="gold-text">Pharmacology</span></h1>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 16px; line-height: 1.6;">Turn the alphabet soup of drugs into unforgettable patterns. Master mechanisms, adverse effects, and drug classifications instantly.</p>
+    </section>
+
+    <!-- ================= MNEMONICS LIST ================= -->
+    <section class="mnemonic-container">
+
+        <h2 class="section-header">🔥 Top 10 High-Yield Basics</h2>
+
+        <div class="mnemonic-item">
+            <h3>1. Bacteriostatic Drugs</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">ECSTaTiC</span></span>
+            <p class="mnemonic-desc"><b>E</b>rythromycin | <b>C</b>hloramphenicol | <b>S</b>ulfonamides | <b>T</b>etracyclines | <b>T</b>rimethoprim | <b>C</b>lindamycin<br><i>💡 These inhibit bacterial growth but don’t kill directly.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>2. Beta-Blocker Classification (Cardio-Selective Beta-1)</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">MAN BABE</span></span>
+            <p class="mnemonic-desc"><b>M</b>etoprolol | <b>A</b>tenolol | <b>N</b>ebivolol | <b>B</b>isoprolol | <b>A</b>cebutolol | <b>B</b>etaxolol | <b>E</b>smolol</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>3. CYP450 Inducers</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">CRAP GPS</span></span>
+            <p class="mnemonic-desc"><b>C</b>arbamazepine | <b>R</b>ifampicin | <b>A</b>lcohol (chronic) | <b>P</b>henytoin | <b>G</b>riseofulvin | <b>P</b>henobarbital | <b>S</b>ulfonylureas<br><i>💡 These increase drug metabolism — leading to decreased efficacy of co-administered drugs.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>4. CYP450 Inhibitors</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">SICKFACES.COM</span></span>
+            <p class="mnemonic-desc"><b>S</b>odium valproate | <b>I</b>soniazid | <b>C</b>imetidine | <b>K</b>etoconazole | <b>F</b>luconazole | <b>A</b>miodarone | <b>C</b>hloramphenicol | <b>E</b>rythromycin | <b>S</b>ulfonamides | <b>.COM</b> (Ciprofloxacin, Omeprazole, Metronidazole)<br><i>💡 They slow down drug metabolism — increasing plasma levels and toxicity risk.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>5. ACE Inhibitors</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">CAP your ACE</span></span>
+            <p class="mnemonic-desc"><b>C</b>aptopril | <b>A</b>nalapril (Enalapril) | <b>P</b>erindopril<br><i>💡 ACE inhibitors end with “-pril”; used in hypertension and heart failure.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>6. Parkinson’s Disease Drugs</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">BALSA</span></span>
+            <p class="mnemonic-desc"><b>B</b>romocriptine | <b>A</b>mantadine | <b>L</b>evodopa + Carbidopa | <b>S</b>elegiline | <b>A</b>ntimuscarinics (Benztropine)<br><i>💡 These balance dopamine-acetylcholine levels in Parkinson’s.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>7. Anticholinergic Side Effects</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Can’t See, Can’t Pee, Can’t Spit, Can’t 💩</span></span>
+            <p class="mnemonic-desc">Blurred vision, urinary retention, dry mouth, constipation.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>8. Anti-Tubercular Drugs (First-Line)</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">RIPE</span></span>
+            <p class="mnemonic-desc"><b>R</b>ifampicin | <b>I</b>soniazid | <b>P</b>yrazinamide | <b>E</b>thambutol<br><i>💡 The four first-line drugs against TB.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>9. Sulfonamide Mechanism</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Folate Blockers Stop Bacterial Growth</span></span>
+            <p class="mnemonic-desc"><i>💡 They inhibit folic acid synthesis — crucial for DNA replication.</i></p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>10. Loop Diuretics</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Loop Lose Na, K, Ca, Cl</span></span>
+            <p class="mnemonic-desc"><i>💡 Mnemonic to remember their ion loss pattern — Furosemide, Bumetanide, Torsemide.</i></p>
+        </div>
+
+        <h2 class="section-header">⚙️ General Pharmacology</h2>
+
+        <div class="mnemonic-item">
+            <h3>11. Drugs with High First-Pass Metabolism</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Nitrates Have Large Pre Systemic Metabolism</span></span>
+            <p class="mnemonic-desc"><b>N</b>itrates, <b>H</b>ydrocortisone, <b>L</b>ignocaine, <b>P</b>ropranolol, <b>S</b>albutamol, <b>M</b>orphine.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>12. Protein Binding Significance</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">DDDD</span></span>
+            <p class="mnemonic-desc"><b>D</b>uration of action, <b>D</b>istribution, <b>D</b>isplacement, <b>D</b>ialysis.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>13. Dialysis Ineffective in Toxicity</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">AVOID Dialysis</span></span>
+            <p class="mnemonic-desc"><b>A</b>mphetamines, <b>V</b>erapamil, <b>O</b>rganophosphates/opioids, <b>I</b>mipramine, <b>D</b>igitalis, <b>D</b>iazepam.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>14. Prodrugs</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">All Prefer Doing MD In Clinical Subjects</span></span>
+            <p class="mnemonic-desc"><b>A</b>CE inhibitors, <b>P</b>rednisone/Proguanil/PPIs, <b>D</b>ipivefrine, <b>M</b>ercaptopurine/Methyldopa/Minoxidil, L-<b>D</b>opa, <b>I</b>rinotecan/INH, <b>C</b>yclophosphamide/Carbimazole/Clopidogrel, <b>S</b>ulfasalazine.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>15. Enzyme Inducers</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">GPRS Cell Phone</span></span>
+            <p class="mnemonic-desc"><b>G</b>riseofulvin, <b>P</b>henytoin, <b>R</b>ifampicin, <b>S</b>moking/Nicotine, <b>C</b>arbamazepine, <b>P</b>henobarbitone.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>16. Enzyme Inhibitors</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Vitamin K Cannot Cause Enzyme Inhibition</span></span>
+            <p class="mnemonic-desc"><b>V</b>alproate, <b>K</b>etoconazole, <b>C</b>imetidine, <b>C</b>iprofloxacin, <b>E</b>rythromycin, <b>I</b>NH.</p>
+        </div>
+
+        <h2 class="section-header">🫀 Cardiovascular</h2>
+
+        <div class="mnemonic-item">
+            <h3>17. Non-Selective Beta-Blockers Contraindicated In</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">ABCD</span></span>
+            <p class="mnemonic-desc"><b>A</b>sthma, <b>B</b>lock (AV block), <b>C</b>HF, <b>D</b>M.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>18. Cardioselective Beta-Blockers</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">New Beta Blockers Acting Exclusively At Myo Cardium</span></span>
+            <p class="mnemonic-desc"><b>N</b>ebivolol, <b>B</b>etaxolol, <b>B</b>isoprolol, <b>A</b>cebutolol, <b>E</b>smolol, <b>A</b>tenolol, <b>M</b>etoprolol, <b>C</b>eliprolol.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>19. Beta-Blockers Safe in Bradycardia</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Contain Partial Agonistic Activity</span></span>
+            <p class="mnemonic-desc"><b>C</b>eliprolol, <b>O</b>xprenolol, <b>P</b>indolol/Penbutolol, <b>A</b>lprenolol, <b>A</b>cebutolol.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>20. Beta-Blockers with Membrane-Stabilizing Property</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Possess Membrane stabilizing or Local Anesthetic Property</span></span>
+            <p class="mnemonic-desc"><b>P</b>ropranolol, <b>M</b>etoprolol, <b>L</b>abetalol, <b>A</b>cebutolol, <b>P</b>indolol.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>21. Lipid-Insoluble Beta-Blockers</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Not Soluble ABC</span></span>
+            <p class="mnemonic-desc"><b>N</b>adolol, <b>S</b>otalol, <b>A</b>tenolol/Acebutolol, <b>B</b>etaxolol/Bisoprolol, <b>C</b>eliprolol.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>22. ACE Inhibitor Properties & Side Effects</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">CAPTOPRIL</span></span>
+            <p class="mnemonic-desc"><b>C</b>ough, <b>A</b>ngioedema, <b>P</b>rodrugs, <b>T</b>aste disturbances, <b>O</b>rthostatic hypotension, <b>P</b>regnancy contraindicated, <b>R</b>enal artery stenosis contraindicated, <b>I</b>ncreased K+ (Hyperkalemia), <b>L</b>ower BP.</p>
+        </div>
+
+        <h2 class="section-header">🩸 Autacoids & CNS</h2>
+
+        <div class="mnemonic-item">
+            <h3>23. Anticholinergic Uses of Antihistamines</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Possess Anti Cholinergic Properties</span></span>
+            <p class="mnemonic-desc"><b>P</b>arkinsonism, <b>A</b>cute muscular dystonia, <b>C</b>ommon cold, <b>P</b>rophylaxis of motion sickness.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>24. Uses of Colchicine</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">SLUM</span></span>
+            <p class="mnemonic-desc"><b>S</b>arcoid arthritis, <b>L</b>iver cirrhosis, <b>U</b>ric acid elevation, <b>M</b>editerranean fever.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>25. Drugs Unsafe in Porphyria</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">SEVERE PORPHYRiA</span></span>
+            <p class="mnemonic-desc"><b>S</b>ulfonamides, <b>E</b>rythromycin, <b>V</b>alproate, <b>E</b>rgot alkaloids, <b>R</b>ifampicin, <b>E</b>strogens, <b>P</b>henobarbitone, <b>O</b>ral contraceptives, <b>P</b>henytoin, <b>H</b>ydralazine, <b>A</b>lcohol.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>26. Short-Acting Benzodiazepines</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">LOT</span></span>
+            <p class="mnemonic-desc"><b>L</b>orazepam, <b>O</b>xazepam, <b>T</b>emazepam (and Triazolam).</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>27. Phenytoin Adverse Effects</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">MILK OATH</span></span>
+            <p class="mnemonic-desc"><b>M</b>egaloblastic anemia, <b>I</b>nhibition of insulin release, <b>L</b>ymphadenopathy, <b>K</b> (Vitamin K deficiency), <b>O</b>steomalacia, <b>A</b>taxia/arrhythmias, <b>T</b>eratogenicity, <b>H</b>irsutism/gum hypertrophy.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>28. Valproate Adverse Effects</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">VALPROATE</span></span>
+            <p class="mnemonic-desc"><b>V</b>omiting, <b>A</b>lopecia, <b>L</b>iver damage, <b>P</b>COD/pancreatitis, <b>R</b>ash, <b>O</b>besity, <b>A</b>granulocytosis, <b>T</b>remors, <b>E</b>pigastric pain.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>29. Antipsychotic Uses</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">ANTI PSY-CHO-TIC</span></span>
+            <p class="mnemonic-desc"><b>Anti</b>-emetic, <b>Psy</b>chosis, <b>Cho</b>rea, <b>Tic</b> disorders.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>30. Antidepressants Uses</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">DEPRESSION</span></span>
+            <p class="mnemonic-desc"><b>D</b>epression, <b>E</b>nuresis, <b>P</b>hobia, <b>R</b>ecurrent panic attacks, <b>E</b>ating disorder, <b>S</b>moking cessation, <b>S</b>tress disorder, <b>I</b>mpulse disorder, <b>O</b>CD, <b>N</b>europathic pain.</p>
+        </div>
+
+        <h2 class="section-header">🦠 Antibiotics & Antimicrobials</h2>
+
+        <div class="mnemonic-item">
+            <h3>31. Safe in Renal Dysfunction</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">DANCER</span></span>
+            <p class="mnemonic-desc"><b>D</b>oxycycline, <b>A</b>mpicillin, <b>N</b>afcillin, <b>C</b>efoperazone/Ceftriaxone, <b>E</b>rythromycin, <b>R</b>ifampicin.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>32. Penicillins (Acid-Resistant vs. Anti-Pseudomonal vs. Pen G)</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">VODKA | CT-MAP | LASTMAn</span></span>
+            <p class="mnemonic-desc">
+                <b>Acid-Resistant (VODKA):</b> Penicillin <b>V</b>, <b>O</b>xacillin, <b>D</b>icloxacillin, <b>C</b>loxacillin (Kloxacillin), <b>A</b>moxicillin/Ampicillin.<br>
+                <b>Anti-Pseudomonal (CT-MAP):</b> <b>C</b>arbenicillin, <b>T</b>icarcillin, <b>M</b>ezlocillin, <b>A</b>zlocillin, <b>P</b>iperacillin.<br>
+                <b>Penicillin G uses (LASTMAn):</b> <b>L</b>eptospira, <b>A</b>ctinomyces, <b>S</b>treptococcus/Staphylococcus, <b>T</b>reponema/Tetanus, <b>M</b>eningococcus, <b>An</b>thrax.
+            </p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>33. Tetracyclines (Uses & Adverse Effects)</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">RBC In PLASMA | KAPIL DEV</span></span>
+            <p class="mnemonic-desc">
+                <b>Uses (RBC In PLASMA):</b> <b>R</b>ickettsia, <b>B</b>rucellosis, <b>C</b>holera/Chlamydia, <b>In</b>guinale, <b>P</b>lague/Peptic ulcer, <b>L</b>GV, <b>A</b>typical pneumonia, <b>S</b>IADH, <b>M</b>alaria, <b>A</b>moebiasis.<br>
+                <b>Adverse Effects (KAPIL DEV):</b> <b>K</b>idney failure, <b>A</b>ntianabolic effect, <b>P</b>hotosensitivity, <b>I</b>nsipidus, <b>L</b>iver toxicity, <b>D</b>entition/bone defects, <b>E</b>xpired drugs → Fanconi syndrome, <b>V</b>estibular dysfunction.
+            </p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>34. Macrolides (Uses & Adverse Effects)</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">CLAW | CHAT | MACRO</span></span>
+            <p class="mnemonic-desc">
+                <b>General Uses (CLAW):</b> <b>C</b>hancroid/Corynebacterium, <b>L</b>egionella, <b>A</b>typical pneumonia, <b>W</b>hooping cough.<br>
+                <b>Azithro/Clarithro uses (CHAT):</b> <b>C</b>hlamydia, <b>H</b>. influenzae, <b>A</b>vium complex, <b>T</b>oxoplasma.<br>
+                <b>Adverse Effects (MACRO):</b> <b>M</b>otilin receptor agonism, <b>A</b>llergy, <b>C</b>holestasis, <b>R</b>eversible <b>O</b>totoxicity.
+            </p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>35. Clindamycin, Co-trimoxazole, Sulfonamides</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">PACT | PNB | ABC RASH</span></span>
+            <p class="mnemonic-desc">
+                <b>Clindamycin uses (PACT):</b> <b>P</b>neumocystis/Plasmodium, <b>A</b>naerobes, <b>C</b>occi, <b>T</b>oxoplasma.<br>
+                <b>Co-trimoxazole (Punjab National Bank):</b> <b>P</b>neumocystis, <b>N</b>ocardia, <b>B</b>urkholderia cepacia.<br>
+                <b>Sulfonamide Adverse Effects (ABC RASH):</b> <b>A</b>plastic anemia, <b>B</b>ilirubin displacement, <b>C</b>rystalluria, <b>R</b>ash, <b>A</b>cetylation → SLE, <b>H</b>emolysis.
+            </p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>36. Anaerobe Coverage</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Cyto Megalo Virus</span></span>
+            <p class="mnemonic-desc"><b>C</b>lindamycin/Cefmetazole/Cefotetan/Cefoxitin/Chloramphenicol, <b>M</b>oxifloxacin/Metronidazole, <b>V</b>ancomycin.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>37. Antitubercular & Antimalarial Drugs</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">SACK | Mango ACHAR | REDMI-LPG</span></span>
+            <p class="mnemonic-desc">
+                <b>Aminoglycoside TB drugs (SACK):</b> <b>S</b>treptomycin, <b>A</b>mikacin, <b>C</b>apreomycin, <b>K</b>anamycin.<br>
+                <b>Fast-acting Schizonticides (Mango ACHAR):</b> <b>M</b>efloquine, <b>H</b>alofantrine, <b>A</b>tovaquone/Amodiaquine, <b>Ar</b>temisinins, <b>C</b>hloroquine, <b>Q</b>uinine.<br>
+                <b>Chloroquine Uses (REDMI-LPG):</b> <b>R</b>heumatoid arthritis, <b>E</b>xtraintestinal amoebiasis, <b>D</b>iscoid LE, <b>M</b>alaria, <b>I</b>nfectious mononucleosis, <b>L</b>epra reaction, <b>P</b>hotogenic reactions, <b>G</b>iardiasis.
+            </p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>38. Metronidazole Uses</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">GUPTA</span></span>
+            <p class="mnemonic-desc"><b>G</b>iardiasis/Gardnerella, <b>U</b>lcer (H. pylori), <b>P</b>seudomembranous colitis, <b>T</b>richomoniasis, <b>A</b>moebiasis/Anaerobes.</p>
+        </div>
+
+        <h2 class="section-header">💉 Antifungals & Oncology</h2>
+
+        <div class="mnemonic-item">
+            <h3>39. Amphotericin B Adverse Effects</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">AMPHOTERICIN-B</span></span>
+            <p class="mnemonic-desc"><b>A</b>nemia, <b>M</b>uscle spasms, <b>P</b>hlebitis, <b>H</b>eadache/Hypotension, <b>O</b>totoxicity, <b>T</b>hrombocytopenia, <b>E</b>mesis, <b>R</b>espiratory stridor, <b>I</b>ncreased temperature, <b>C</b>hills, <b>I</b>mmediate hypersensitivity, <b>N</b>ephrotoxicity, <b>B</b>ronchospasm.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>40. Methotrexate Uses</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">Inhibit CANCER</span></span>
+            <p class="mnemonic-desc"><b>I</b>mmunosuppressant, <b>C</b>rohn’s disease, <b>A</b>bortion, <b>N</b>on-Hodgkin lymphoma, <b>C</b>horiocarcinoma, <b>E</b>ctopic pregnancy, <b>R</b>heumatoid arthritis.</p>
+        </div>
+
+        <div class="mnemonic-item">
+            <h3>41. Rituximab Uses</h3>
+            <span class="mnemonic-label">🧠 The Mnemonic: <span class="mnemonic-value">ReLIANCe</span></span>
+            <p class="mnemonic-desc"><b>R</b>heumatoid arthritis, <b>L</b>upus, <b>I</b>TP, <b>A</b>utoimmune hemolytic anemia, <b>N</b>on-Hodgkin lymphoma, <b>C</b>LL.</p>
+        </div>
+
+        <!-- ================= ONE-PAGE RAPID REVISION ================= -->
+        <h2 style="color: #D4AF37; text-align: center; margin-top: 60px; font-family: 'Cinzel', serif;">⭐ One-Page Rapid Revision</h2>
+        <table class="premium-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Topic</th>
+                    <th>Mnemonic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Basics</td><td>Bacteriostatic Drugs</td><td>ECSTaTiC</td></tr>
+                <tr><td>Basics</td><td>CYP450 Inducers / Inhibitors</td><td>CRAP GPS / SICKFACES.COM</td></tr>
+                <tr><td>Basics</td><td>Anti-Tubercular (1st line)</td><td>RIPE</td></tr>
+                <tr><td>General</td><td>High First-Pass Metabolism</td><td>Nitrates Have Large Pre Systemic Metabolism</td></tr>
+                <tr><td>General</td><td>Prodrugs</td><td>All Prefer Doing MD In Clinical Subjects</td></tr>
+                <tr><td>Cardio</td><td>Cardioselective Beta-Blockers</td><td>MAN BABE / New Beta Blockers Acting Exclusively...</td></tr>
+                <tr><td>Cardio</td><td>ACE Inhibitor Properties</td><td>CAPTOPRIL</td></tr>
+                <tr><td>CNS</td><td>Parkinson's Drugs</td><td>BALSA</td></tr>
+                <tr><td>CNS</td><td>Phenytoin / Valproate Effects</td><td>MILK OATH / VALPROATE</td></tr>
+                <tr><td>CNS</td><td>Antidepressants Uses</td><td>DEPRESSION</td></tr>
+                <tr><td>Antibiotics</td><td>Safe in Renal Dysfunction</td><td>DANCER</td></tr>
+                <tr><td>Antibiotics</td><td>Tetracycline Uses & Effects</td><td>RBC In PLASMA / KAPIL DEV</td></tr>
+                <tr><td>Antibiotics</td><td>Macrolide Uses & Effects</td><td>CLAW / CHAT / MACRO</td></tr>
+                <tr><td>Antibiotics</td><td>Metronidazole Uses</td><td>GUPTA</td></tr>
+                <tr><td>Oncology</td><td>Methotrexate Uses</td><td>Inhibit CANCER</td></tr>
+                <tr><td>Oncology</td><td>Rituximab Uses</td><td>ReLIANCe</td></tr>
+                <tr><td>Antifungal</td><td>Amphotericin B Effects</td><td>AMPHOTERICIN-B</td></tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <h2>MEDUCO</h2>
+        <p><span class="luxury-text">Where Medical Knowledge Becomes Simple.</span></p>
+    </footer>
+
+</body>
+</html>
