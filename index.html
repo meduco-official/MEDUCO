@@ -42,123 +42,7 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* =========================================
-           🎁 PREMIUM GIFT OVERLAY STYLES
-           ========================================= */
-        #gift-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(5, 5, 5, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            transition: opacity 0.5s ease;
-        }
-
-        .gift-container {
-            text-align: center;
-            background: rgba(20, 20, 20, 0.8);
-            padding: 4rem;
-            border-radius: 24px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.9), inset 0 0 40px rgba(212, 175, 55, 0.05);
-            max-width: 500px;
-            width: 90%;
-        }
-
-        .gift-title {
-            color: var(--gold-primary);
-            font-size: 1.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        /* Gift Icon */
-        .gift-icon {
-            cursor: pointer;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
-        }
-
-        .gift-icon:hover {
-            transform: scale(1.1) translateY(-5px);
-            filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.8));
-        }
-
-        /* Luxury Loader */
-        .luxury-loader {
-            display: none; /* Hidden initially */
-            width: 60px;
-            height: 60px;
-            border: 4px solid rgba(212, 175, 55, 0.2);
-            border-top: 4px solid var(--gold-primary);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 30px auto;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Blinking Code Result */
-        .gift-result {
-            display: none; /* Hidden initially */
-        }
-
-        .redeem-code {
-            font-size: 3.5rem;
-            font-weight: 800;
-            letter-spacing: 5px;
-            margin: 20px 0;
-            background: linear-gradient(to right, var(--gold-hover), var(--gold-primary), var(--gold-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: goldBlink 1.5s infinite alternate;
-        }
-
-        @keyframes goldBlink {
-            0% { 
-                opacity: 0.6;
-                text-shadow: 0 0 10px rgba(212, 175, 55, 0); 
-            }
-            100% { 
-                opacity: 1;
-                text-shadow: 0 0 30px rgba(212, 175, 55, 0.8), 0 0 60px rgba(212, 175, 55, 0.4); 
-            }
-        }
-
-        .enter-site-btn {
-            margin-top: 20px;
-            padding: 12px 30px;
-            background: transparent;
-            border: 1px solid var(--gold-primary);
-            color: var(--gold-primary);
-            border-radius: 50px;
-            font-size: 1rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .enter-site-btn:hover {
-            background: rgba(212, 175, 55, 0.1);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-        }
-
-        /* =========================================
-           MAIN WEBSITE STYLES (Unchanged)
-           ========================================= */
+        /* Premium Glassmorphism Card */
         .container {
             text-align: center;
             background: rgba(0, 0, 0, 0.55);
@@ -172,6 +56,7 @@
             width: 100%;
         }
 
+        /* Luxury Gold Heading */
         h1 {
             font-size: 3.2rem;
             margin-bottom: 10px;
@@ -191,6 +76,7 @@
             line-height: 1.6;
         }
         
+        /* Gold Countdown Timer Styles */
         .countdown {
             display: flex;
             justify-content: center;
@@ -223,6 +109,7 @@
             letter-spacing: 2px;
         }
 
+        /* Premium Email Form Styles */
         .notify-form {
             display: flex;
             gap: 10px;
@@ -273,6 +160,7 @@
             box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
         }
 
+        /* Success Message */
         .success-msg { 
             display: none; 
             color: var(--gold-primary); 
@@ -285,45 +173,6 @@
 </head>
 <body>
 
-    <!-- 🎁 PREMIUM GIFT OVERLAY -->
-    <div id="gift-overlay">
-        <div class="gift-container">
-            <div id="gift-intro">
-                <div class="gift-title">An Exclusive Gift</div>
-                <p style="margin-bottom: 20px; font-size: 0.95rem;">Tap the box to reveal your premium launch reward.</p>
-                
-                <!-- SVG Gold Gift Box -->
-                <svg class="gift-icon" onclick="openGift()" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="url(#gold-grad)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-                    <defs>
-                        <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#F3E5AB" />
-                            <stop offset="50%" stop-color="#D4AF37" />
-                            <stop offset="100%" stop-color="#AA771C" />
-                        </linearGradient>
-                    </defs>
-                    <polyline points="20 12 20 22 4 22 4 12"></polyline>
-                    <rect x="2" y="7" width="20" height="5"></rect>
-                    <line x1="12" y1="22" x2="12" y2="7"></line>
-                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
-                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
-                </svg>
-            </div>
-
-            <!-- Loading Spinner -->
-            <div id="gift-loader" class="luxury-loader"></div>
-
-            <!-- Result (Redeem Code) -->
-            <div id="gift-result" class="gift-result">
-                <div class="gift-title">Your Redeem Code</div>
-                <div class="redeem-code">KAVYA</div>
-                <p style="margin-bottom: 25px; font-size: 0.9rem;">Save this code for exclusive benefits at launch.</p>
-                <button class="enter-site-btn" onclick="closeGiftOverlay()">Enter MEDUCO</button>
-            </div>
-        </div>
-    </div>
-    <!-- END GIFT OVERLAY -->
-
-    <!-- MAIN WEBSITE CONTAINER -->
     <div class="container">
         <h1>MEDUCO</h1>
         <p>We are crafting a premium digital medical learning experience. Request exclusive access to be notified the exact moment we launch.</p>
@@ -349,64 +198,38 @@
     </div>
 
     <script>
-        // --- 🎁 GIFT OVERLAY LOGIC ---
-        function openGift() {
-            // 1. Hide the gift icon and intro text
-            document.getElementById('gift-intro').style.display = 'none';
-            
-            // 2. Show the loading spinner
-            document.getElementById('gift-loader').style.display = 'block';
-            
-            // 3. Wait exactly 3 seconds (3000 milliseconds)
-            setTimeout(() => {
-                // Hide loader
-                document.getElementById('gift-loader').style.display = 'none';
-                
-                // Show the blinking code and enter button
-                document.getElementById('gift-result').style.display = 'block';
-            }, 3000);
-        }
-
-        function closeGiftOverlay() {
-            // Fade out the overlay
-            const overlay = document.getElementById('gift-overlay');
-            overlay.style.opacity = '0';
-            
-            // Remove it from view after fade completes
-            setTimeout(() => {
-                overlay.style.display = 'none';
-            }, 500);
-        }
-        // -----------------------------
-
-
-        // --- MAIN WEBSITE LOGIC (Unchanged) ---
+        // Set the launch date to 30 days from now
         const launchDate = new Date();
         launchDate.setDate(launchDate.getDate() + 30);
         const targetTime = launchDate.getTime();
 
+        // Update the countdown every 1 second
         const countdownInterval = setInterval(function() {
             const now = new Date().getTime();
             const distance = targetTime - now;
 
+            // Time calculations for days, hours, minutes and seconds
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+            // Output the result in the HTML elements
             document.getElementById("days").innerText = days < 10 ? "0" + days : days;
             document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
             document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
             document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
 
+            // If the countdown is finished, display a message
             if (distance < 0) {
                 clearInterval(countdownInterval);
                 document.querySelector(".countdown").innerHTML = "<div style='color: #D4AF37; font-size: 2rem; font-weight: bold;'>WE ARE LIVE!</div>";
             }
         }, 1000);
 
+        // Form submission logic
         function notifyMe(event) {
-            event.preventDefault(); 
+            event.preventDefault(); // Prevent page reload
             const email = document.getElementById('emailInput').value;
             
             if(email.includes('@') && email.includes('.')) {
