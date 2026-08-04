@@ -1,33 +1,243 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDUCO | Exclusive Access Coming Soon</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
+        :root {
+            --gold-primary: #D4AF37; /* Metallic Gold */
+            --gold-hover: #F3E5AB; /* Light Gold */
+            --gold-dark: #AA771C; /* Deep Gold */
+            --bg-1: #050505; /* Deep Black */
+            --bg-2: #141414; /* Charcoal Black */
+            --bg-3: #1c1808; /* Very dark gold-tinted black */
+        }
+
+        /* Animated Dark Luxury Gradient Background */
+        body {
+            background: linear-gradient(-45deg, var(--bg-1), var(--bg-2), var(--bg-3), var(--bg-1));
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Premium Glassmorphism Card */
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.8), 0 0 30px rgba(212, 175, 55, 0.05);
+            max-width: 650px;
+            width: 100%;
+        }
+
+        /* Luxury Gold Heading */
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(to right, var(--gold-hover), var(--gold-primary), var(--gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            color: #B0B0B0;
+            line-height: 1.6;
+        }
+        
+        /* Gold Countdown Timer Styles */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .time-box {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 15px;
+            border-radius: 12px;
+            min-width: 90px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.05);
+        }
+
+        .time-box span {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--gold-primary);
+        }
+
+        .time-box .label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-top: 5px;
+            color: #888;
+            letter-spacing: 2px;
+        }
+
+        /* Premium Email Form Styles */
+        .notify-form {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .notify-form input {
+            padding: 15px 25px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50px;
+            outline: none;
+            width: 60%;
+            min-width: 250px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .notify-form input::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .notify-form input:focus {
+            border: 1px solid var(--gold-primary);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .notify-form button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: #000;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .notify-form button:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, var(--gold-hover), var(--gold-primary));
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Success Message */
+        .success-msg { 
+            display: none; 
+            color: var(--gold-primary); 
+            font-size: 1.1em;
+            font-weight: 400;
+            padding: 10px;
+            letter-spacing: 1px;
+        }
     </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this?</h3>
-      <p>This page was generated by the Firebase Command-Line Interface. To modify it, edit the <code>404.html</code> file in your project's configured <code>public</code> directory.</p>
+</head>
+<body>
+
+    <div class="container">
+        <h1>MEDUCO</h1>
+        <p>We are crafting a premium digital medical learning experience. Request exclusive access to be notified the exact moment we launch.</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown">
+            <div class="time-box"><span id="days">00</span><div class="label">Days</div></div>
+            <div class="time-box"><span id="hours">00</span><div class="label">Hours</div></div>
+            <div class="time-box"><span id="minutes">00</span><div class="label">Minutes</div></div>
+            <div class="time-box"><span id="seconds">00</span><div class="label">Seconds</div></div>
+        </div>
+
+        <!-- Notification Form -->
+        <form class="notify-form" id="formBox" onsubmit="notifyMe(event)">
+            <input type="email" id="emailInput" placeholder="Enter your email address..." required>
+            <button type="submit">Request Access</button>
+        </form>
+        
+        <!-- Success Message -->
+        <div class="success-msg" id="successMsg">
+            ✨ Invitation secured. We will notify you upon launch.
+        </div>
     </div>
-  </body>
+
+    <script>
+        // Set the launch date to 30 days from now
+        const launchDate = new Date();
+        launchDate.setDate(launchDate.getDate() + 30);
+        const targetTime = launchDate.getTime();
+
+        // Update the countdown every 1 second
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetTime - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in the HTML elements
+            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+            // If the countdown is finished, display a message
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector(".countdown").innerHTML = "<div style='color: #D4AF37; font-size: 2rem; font-weight: bold;'>WE ARE LIVE!</div>";
+            }
+        }, 1000);
+
+        // Form submission logic
+        function notifyMe(event) {
+            event.preventDefault(); // Prevent page reload
+            const email = document.getElementById('emailInput').value;
+            
+            if(email.includes('@') && email.includes('.')) {
+                document.getElementById('formBox').style.display = 'none';
+                document.getElementById('successMsg').style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
 </html>

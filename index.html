@@ -1,243 +1,278 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEDUCO | Exclusive Access Coming Soon</title>
-    <style>
-        /* Base Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-        :root {
-            --gold-primary: #D4AF37; /* Metallic Gold */
-            --gold-hover: #F3E5AB; /* Light Gold */
-            --gold-dark: #AA771C; /* Deep Gold */
-            --bg-1: #050505; /* Deep Black */
-            --bg-2: #141414; /* Charcoal Black */
-            --bg-3: #1c1808; /* Very dark gold-tinted black */
-        }
 
-        /* Animated Dark Luxury Gradient Background */
-        body {
-            background: linear-gradient(-45deg, var(--bg-1), var(--bg-2), var(--bg-3), var(--bg-1));
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            padding: 20px;
-            overflow: hidden;
-        }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+<meta charset="UTF-8">
 
-        /* Premium Glassmorphism Card */
-        .container {
-            text-align: center;
-            background: rgba(0, 0, 0, 0.55);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            padding: 3rem 2rem;
-            border-radius: 24px;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            box-shadow: 0 25px 45px rgba(0,0,0,0.8), 0 0 30px rgba(212, 175, 55, 0.05);
-            max-width: 650px;
-            width: 100%;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* Luxury Gold Heading */
-        h1 {
-            font-size: 3.2rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            background: linear-gradient(to right, var(--gold-hover), var(--gold-primary), var(--gold-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0px 4px 15px rgba(212, 175, 55, 0.2);
-        }
 
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 35px;
-            color: #B0B0B0;
-            line-height: 1.6;
-        }
-        
-        /* Gold Countdown Timer Styles */
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
 
-        .time-box {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 15px;
-            border-radius: 12px;
-            min-width: 90px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.05);
-        }
+<title>MEDUCO | Medical Learning Platform</title>
 
-        .time-box span {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--gold-primary);
-        }
 
-        .time-box .label {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            margin-top: 5px;
-            color: #888;
-            letter-spacing: 2px;
-        }
 
-        /* Premium Email Form Styles */
-        .notify-form {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-        .notify-form input {
-            padding: 15px 25px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 50px;
-            outline: none;
-            width: 60%;
-            min-width: 250px;
-            font-size: 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            color: #fff;
-            transition: all 0.3s ease;
-        }
 
-        .notify-form input::placeholder {
-            color: rgba(255, 255, 255, 0.3);
-        }
 
-        .notify-form input:focus {
-            border: 1px solid var(--gold-primary);
-            background: rgba(255, 255, 255, 0.1);
-        }
+<link rel="stylesheet" href="style.css">
 
-        .notify-form button {
-            padding: 15px 30px;
-            border: none;
-            border-radius: 50px;
-            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
-            color: #000;
-            font-size: 1rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-        }
 
-        .notify-form button:hover {
-            transform: translateY(-3px);
-            background: linear-gradient(135deg, var(--gold-hover), var(--gold-primary));
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
-        }
 
-        /* Success Message */
-        .success-msg { 
-            display: none; 
-            color: var(--gold-primary); 
-            font-size: 1.1em;
-            font-weight: 400;
-            padding: 10px;
-            letter-spacing: 1px;
-        }
-    </style>
 </head>
+
+
+
 <body>
 
-    <div class="container">
-        <h1>MEDUCO</h1>
-        <p>We are crafting a premium digital medical learning experience. Request exclusive access to be notified the exact moment we launch.</p>
 
-        <!-- Countdown Timer -->
-        <div class="countdown">
-            <div class="time-box"><span id="days">00</span><div class="label">Days</div></div>
-            <div class="time-box"><span id="hours">00</span><div class="label">Hours</div></div>
-            <div class="time-box"><span id="minutes">00</span><div class="label">Minutes</div></div>
-            <div class="time-box"><span id="seconds">00</span><div class="label">Seconds</div></div>
-        </div>
 
-        <!-- Notification Form -->
-        <form class="notify-form" id="formBox" onsubmit="notifyMe(event)">
-            <input type="email" id="emailInput" placeholder="Enter your email address..." required>
-            <button type="submit">Request Access</button>
-        </form>
-        
-        <!-- Success Message -->
-        <div class="success-msg" id="successMsg">
-            ✨ Invitation secured. We will notify you upon launch.
-        </div>
+<header>
+
+
+
+<a href="index.html" class="logo">MEDUCO 🩺</a>
+
+
+
+<nav>
+
+
+
+<a href="#" class="nav-link active">Home</a>
+
+<div class="dropdown">
+
+  <a href="#" class="nav-link">Mnemonics ▾</a>
+
+<div class="dropdown-content">
+    <a href="mbbs.html">MBBS Mnemonics</a>
+
+        <a href="clinical-skills.html">Clinical Skills Mnemonics</a>
+
+        <a href="medicine.html">Medicine Mnemonics</a>
+
+        <a href="surgery.html">Surgery Mnemonics</a>
+
+        <a href="paediatric.html">Paediatric Mnemonics</a>
+
+        <a href="psychiatry.html">Psychiatry Mnemonics</a>
+
     </div>
 
-    <script>
-        // Set the launch date to 30 days from now
-        const launchDate = new Date();
-        launchDate.setDate(launchDate.getDate() + 30);
-        const targetTime = launchDate.getTime();
+</div>
 
-        // Update the countdown every 1 second
-        const countdownInterval = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = targetTime - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in the HTML elements
-            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
-            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
-            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
-            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
-
-            // If the countdown is finished, display a message
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.querySelector(".countdown").innerHTML = "<div style='color: #D4AF37; font-size: 2rem; font-weight: bold;'>WE ARE LIVE!</div>";
-            }
-        }, 1000);
-
-        // Form submission logic
-        function notifyMe(event) {
-            event.preventDefault(); // Prevent page reload
-            const email = document.getElementById('emailInput').value;
+            <!-- Subjects Dropdown -->
+<div class="dropdown">
+    <a href="#" class="nav-link">Subjects ▾</a>
+    
+    <div class="dropdown-content">
+        
+        <!-- 1. The Anatomy Section (Now nested inside Subjects) -->
+        <div class="nested-dropdown">
+            <a href="anatomy.html">Anatomy ▸</a>
             
-            if(email.includes('@') && email.includes('.')) {
-                document.getElementById('formBox').style.display = 'none';
-                document.getElementById('successMsg').style.display = 'block';
-            }
-        }
-    </script>
+            <!-- Your exact subdivisions, preserved -->
+            <div class="nested-dropdown-content">
+                <a href="anatomy-general.html">General Anatomy</a>
+                <a href="anatomy-upper-limb.html">Upper Limb</a>
+                <a href="anatomy-thorax.html">Thorax</a>
+                <a href="anatomy-abdomen.html">Abdomen</a>
+                <a href="anatomy-pelvis.html">Pelvis and Perineum</a>
+                <a href="anatomy-lower-limb.html">Lower Limb</a>
+                <a href="anatomy-head-neck.html">Head and Neck</a>
+                <a href="anatomy-neuro.html">Neuroanatomy</a>
+                <a href="anatomy-embryology.html">Embryology</a>
+                <a href="anatomy-histology.html">Histology</a>
+            </div>
+        </div>
 
+        <!-- 2. The other 18 Subjects go here -->
+        <a href="physiology.html">Physiology</a>
+        <a href="biochemistry.html">Biochemistry</a>
+        <a href="pathology.html">Pathology</a>
+        <a href="pharmacology.html">Pharmacology</a>
+        <a href="microbiology.html">Microbiology</a>
+        <a href="forensic.html">Forensic Medicine</a>
+        <a href="psm.html">Preventive & Social Medicine</a>
+        <a href="medicine.html">General Medicine</a>
+        <a href="surgery.html">General Surgery</a>
+        <a href="obgyn.html">Obstetrics & Gynecology</a>
+        <a href="pediatrics.html">Pediatrics</a>
+        <a href="ent.html">ENT</a>
+        <a href="ophthalmology.html">Ophthalmology</a>
+        <a href="orthopedics.html">Orthopedics</a>
+        <a href="psychiatry.html">Psychiatry</a>
+        <a href="dermatology.html">Dermatology</a>
+        <a href="anesthesia.html">Anesthesia</a>
+        <a href="radiology.html">Radiology</a>
+
+    </div>
+</div>
+
+            <!-- Notes Dropdown -->
+            <div class="dropdown">
+                <a href="notes.html" class="nav-link">Notes ▾</a>
+                <div class="dropdown-content">
+                    <a href="notes-anatomy.html">Anatomy</a>
+                    <a href="notes-physiology.html">Physiology</a>
+                    <a href="notes-biochemistry.html">Biochemistry</a>
+                    <a href="notes-pathology.html">Pathology</a>
+                    <a href="notes-microbiology.html">Microbiology</a>
+                    <a href="notes-pharmacology.html">Pharmacology</a>
+                    <a href="notes-fmt.html">Forensic Medicine & Toxicology</a>
+                    <a href="notes-psm.html">Community Medicine</a>
+                    <a href="notes-medicine.html">General Medicine</a>
+                    <a href="notes-surgery.html">General Surgery</a>
+                    <a href="notes-obg.html">Obstetrics & Gynaecology</a>
+                    <a href="notes-pediatrics.html">Pediatrics</a>
+                    <a href="notes-ophthalmology.html">Ophthalmology</a>
+                    <a href="notes-ent.html">Otorhinolaryngology (ENT)</a>
+                    <a href="notes-orthopaedics.html">Orthopaedics</a>
+                    <a href="notes-dvl.html">Dermatology (DVL)</a>
+                    <a href="notes-psychiatry.html">Psychiatry</a>
+                    <a href="notes-anaesthesiology.html">Anaesthesiology</a>
+                    <a href="notes-radiology.html">Radiodiagnosis</a>
+                </div>
+            </div>
+
+            <!-- Community Dropdown -->
+            <div class="dropdown">
+                <a href="community.html" class="nav-link">Community ▾</a>
+                <div class="dropdown-content">
+                    <a href="community-cases.html">Clinical Case Discussions</a>
+                    <a href="community-network.html">College & Hospital Network</a>
+                    <a href="community-study.html">Study Groups</a>
+                    <a href="community-mentorship.html">Ask a Senior (Mentorship)</a>
+                    <a href="community-exams.html">Exam Prep Forums</a>
+                </div>
+            </div>
+
+            <!-- Login Button -->
+            <a href="login.html" class="start-btn" style="padding: 10px 25px; margin-left: 20px;">Login</a>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Where 
+                <span class="gold-text">Medical Knowledge</span>
+                <br>
+                Becomes 
+                <span class="luxury-word">Simple</span>
+                <span class="diamond">◆</span>
+                <span class="luxury-word">Clear</span>
+                <span class="diamond">◆</span>
+                <span class="luxury-word">Accessible</span>
+            </h1>
+            <p>
+                MEDUCO transforms complex medical concepts into a premium, beautifully structured learning experience designed for future doctors worldwide.
+            </p>
+            <div class="hero-buttons">
+                <a href="#" class="start-btn">Start Learning</a>
+                <a href="#about" class="explore-btn">Explore Courses</a>
+            </div>
+        </div>
+
+        <div class="medical-card">
+            <div class="icon">🧬</div>
+            <h3>Medical Excellence</h3>
+            <p>
+                Anatomy • Physiology
+                <br>
+                Biochemistry • Pathology
+                <br>
+                Pharmacology • Clinical Medicine
+            </p>
+            <div class="gold-line"></div>
+            <span>Learn. Understand. Become a Doctor.</span>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT MEDUCO ================= -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>The Future of <span class="gold-text">Medical Education</span></h2>
+                <div class="gold-line-left"></div>
+                <p>
+                    At MEDUCO, we believe mastering human anatomy, clinical biology, and the complex biomechanics of the body should not be a struggle. We bridge the gap between heavy, traditional medical textbooks and clear, accessible knowledge.
+                </p>
+                <p>
+                    Designed specifically for dedicated medical students and future doctors, our platform provides structured, high-yield content that helps you understand the 'why' behind the medicine.
+                </p>
+                <a href="courses.html" class="btn-secondary">View Our Curriculum</a>
+            </div>
+            <div class="about-image-placeholder">
+                <div class="glass-box">
+                    <div class="icon">🔬</div>
+                    <h3>Clinical Excellence</h3>
+                    <p>Building the foundation for tomorrow's healthcare leaders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= VIDEO SHOWCASE ================= -->
+    <section class="video-showcase">
+        <h2>Featured <span class="gold-text">Visual Learning</span></h2>
+        <p class="video-subtitle">Experience high-yield clinical biology and biomechanics in action.</p>
+        
+        <div class="video-container">
+            <!-- Free Stock Video Placeholder -->
+            <video autoplay loop muted playsinline class="premium-video">
+                <source src="https://cdn.pixabay.com/video/2020/05/25/40131-424823293_large.mp4" type="video/mp4">
+            </video>
+            
+            <div class="video-overlay">
+                <div class="glass-box">
+                    <h3>MEDUCO Official Channel</h3>
+                    <p>Subscribe for deep-dive anatomy breakdowns.</p>
+                    <a href="#" class="start-btn">Watch Full Videos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
+        <h2>Why Choose <span>MEDUCO?</span></h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🩺</div>
+                <h3>Expert Medical Content</h3>
+                <p>High-quality explanations prepared for medical students.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📖</div>
+                <h3>Structured Learning</h3>
+                <p>Study smarter with organized subjects and notes.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🌍</div>
+                <h3>Global Community</h3>
+                <p>Connect with medical students around the world.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <h2>MEDUCO</h2>
+        <p>
+            <span class="luxury-text">
+                Where Medical Knowledge Becomes Simple, Clear, and Accessible.
+            </span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
