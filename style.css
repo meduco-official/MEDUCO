@@ -31,7 +31,30 @@ h1, h2, h3 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.nested-dropdown {
+    position: relative;
+}
+.nested-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%; 
+    top: 0;
+    min-width: 180px;
+    background-color: #000;
+    z-index: 1000;
+}
+.nested-dropdown-content a {
+    color: white; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.nested-dropdown-content a:hover {
+    background-color: #333; 
+}
+.nested-dropdown:hover .nested-dropdown-content {
+    display: block;
+}
 .luxury-text {
     font-family: 'Cinzel', serif;
     font-size: 28px;
