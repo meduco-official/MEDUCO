@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Video Lectures - MEDUCO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .subject-card {
+            background: #141414;
+            border: 2px solid #ffd700;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            /* Glowing Effect */
+            box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+        .subject-card:hover {
+            background: #ffd700;
+            color: #000000;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.9), 0 0 50px rgba(255, 215, 0, 0.5);
+            transform: translateY(-5px);
+        }
+        .subject-card span {
+            display: block;
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-weight: normal;
+        }
+        .subject-card:hover span {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MEDUCO Video Lectures</h1>
+    <p class="subtitle">Explore all 19 medical subjects with structured topic breakdowns.</p>
+    
+    <div class="subjects-grid">
+        <a href="#" class="subject-card" id="anatomy">Anatomy <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card" id="physiology">Physiology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card" id="biochemistry">Biochemistry <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card" id="pathology">Pathology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card" id="pharmacology">Pharmacology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Microbiology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Forensic Medicine <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Community Medicine <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">General Medicine <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Surgery <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Obstetrics & Gynecology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Pediatrics <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Ophthalmology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">ENT <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Orthopedics <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Radiology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Anesthesiology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Dermatology <span>Topics & Videos</span></a>
+        <a href="#" class="subject-card">Psychiatry <span>Topics & Videos</span></a>
+    </div>
+
+</body>
+</html>
