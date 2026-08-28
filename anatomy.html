@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Video Lectures - MEDUCO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .video-container {
+            background: #141414;
+            border: 2px solid #ffd700;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            text-align: center;
+        }
+        /* Secure video player preventing downloads and right-clicks */
+        video {
+            width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            background: #000;
+            outline: none;
+        }
+        .video-title {
+            color: #ffd700;
+            font-size: 20px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .topics-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .topic-btn {
+            background: #141414;
+            border: 1px solid #444;
+            border-left: 5px solid #ffd700;
+            padding: 15px 20px;
+            color: #ffffff;
+            text-align: left;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .topic-btn:hover {
+            background: #1f1f1f;
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Anatomy Video Lectures</h1>
+
+        <!-- Video Player Section with Download Protection -->
+        <div class="video-container">
+            <video id="active-video" controls controlsList="nodownload" oncontextmenu="return false;">
+                <source src="your-video-file-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-title" id="video-title-display">Select a topic below to start watching</div>
+        </div>
+
+        <!-- Topics from General Anatomy to Neuroanatomy -->
+        <div class="topics-list">
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('General Anatomy Introduction', 'your-video-file-1.mp4')">1. General Anatomy</a>
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('Upper Limb - Bones & Joints', 'your-video-file-2.mp4')">2. Upper Limb</a>
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('Lower Limb - Muscles & Nerves', 'your-video-file-3.mp4')">3. Lower Limb</a>
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('Thorax & Mediastinum', 'your-video-file-4.mp4')">4. Thorax</a>
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('Abdomen & Pelvis', 'your-video-file-5.mp4')">5. Abdomen & Pelvis</a>
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('Head and Neck Anatomy', 'your-video-file-6.mp4')">6. Head and Neck</a>
+            <a href="#active-video" class="topic-btn" onclick="changeVideo('Neuroanatomy - Brain & Spinal Cord', 'your-video-file-7.mp4')">7. Neuroanatomy</a>
+        </div>
+    </div>
+
+    <script>
+        function changeVideo(title, videoSrc) {
+            const videoPlayer = document.getElementById('active-video');
+            const titleDisplay = document.getElementById('video-title-display');
+            
+            titleDisplay.innerText = title;
+            videoPlayer.src = videoSrc;
+            videoPlayer.load();
+            videoPlayer.play();
+        }
+    </script>
+
+</body>
+</html>
